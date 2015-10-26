@@ -21,6 +21,9 @@
 		3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */; settings = {ASSET_TAGS = (); }; };
 		3886C0C11BD74B090014E661 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0C01BD74B090014E661 /* BaseModel.m */; settings = {ASSET_TAGS = (); }; };
 		4E1142D71BDE39C1001987DA /* MANYReadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142D61BDE39C1001987DA /* MANYReadingController.m */; settings = {ASSET_TAGS = (); }; };
+		4E1142DA1BDE443E001987DA /* MANYQueController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142D91BDE443E001987DA /* MANYQueController.m */; settings = {ASSET_TAGS = (); }; };
+		4E1142DD1BDE50BC001987DA /* MANYThingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142DC1BDE50BC001987DA /* MANYThingController.m */; settings = {ASSET_TAGS = (); }; };
+		4E1142E01BDE559E001987DA /* MANYPersonalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142DF1BDE559E001987DA /* MANYPersonalController.m */; settings = {ASSET_TAGS = (); }; };
 		4E1FE2831BDDCD46009550FB /* MANYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1FE2821BDDCD46009550FB /* MANYTabBarController.m */; settings = {ASSET_TAGS = (); }; };
 		4E1FE2A61BDE1B11009550FB /* MANYHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1FE2A51BDE1B11009550FB /* MANYHomeController.m */; settings = {ASSET_TAGS = (); }; };
 		4E1FE2AA1BDE3440009550FB /* IMG_1420.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 4E1FE2A91BDE3440009550FB /* IMG_1420.JPG */; settings = {ASSET_TAGS = (); }; };
@@ -54,6 +57,12 @@
 		4329DABFE5AD654FE71597C9 /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
 		4E1142D51BDE39C1001987DA /* MANYReadingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYReadingController.h; sourceTree = "<group>"; };
 		4E1142D61BDE39C1001987DA /* MANYReadingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYReadingController.m; sourceTree = "<group>"; };
+		4E1142D81BDE443E001987DA /* MANYQueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYQueController.h; sourceTree = "<group>"; };
+		4E1142D91BDE443E001987DA /* MANYQueController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYQueController.m; sourceTree = "<group>"; };
+		4E1142DB1BDE50BC001987DA /* MANYThingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYThingController.h; sourceTree = "<group>"; };
+		4E1142DC1BDE50BC001987DA /* MANYThingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYThingController.m; sourceTree = "<group>"; };
+		4E1142DE1BDE559E001987DA /* MANYPersonalController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYPersonalController.h; sourceTree = "<group>"; };
+		4E1142DF1BDE559E001987DA /* MANYPersonalController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYPersonalController.m; sourceTree = "<group>"; };
 		4E1FE2811BDDCD46009550FB /* MANYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYTabBarController.h; sourceTree = "<group>"; };
 		4E1FE2821BDDCD46009550FB /* MANYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYTabBarController.m; sourceTree = "<group>"; };
 		4E1FE2A41BDE1B11009550FB /* MANYHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYHomeController.h; sourceTree = "<group>"; };
@@ -230,6 +239,12 @@
 				4E1FE2A51BDE1B11009550FB /* MANYHomeController.m */,
 				4E1142D51BDE39C1001987DA /* MANYReadingController.h */,
 				4E1142D61BDE39C1001987DA /* MANYReadingController.m */,
+				4E1142D81BDE443E001987DA /* MANYQueController.h */,
+				4E1142D91BDE443E001987DA /* MANYQueController.m */,
+				4E1142DB1BDE50BC001987DA /* MANYThingController.h */,
+				4E1142DC1BDE50BC001987DA /* MANYThingController.m */,
+				4E1142DE1BDE559E001987DA /* MANYPersonalController.h */,
+				4E1142DF1BDE559E001987DA /* MANYPersonalController.m */,
 			);
 			path = Special;
 			sourceTree = "<group>";
@@ -376,8 +391,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */,
+				4E1142DD1BDE50BC001987DA /* MANYThingController.m in Sources */,
+				4E1142E01BDE559E001987DA /* MANYPersonalController.m in Sources */,
 				4E1142D71BDE39C1001987DA /* MANYReadingController.m in Sources */,
 				3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */,
+				4E1142DA1BDE443E001987DA /* MANYQueController.m in Sources */,
 				3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */,
 				3886C09B1BD748830014E661 /* AppDelegate.m in Sources */,
 				3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */,
