@@ -11,3 +11,11 @@
 @implementation MANYQueModel
 
 @end
+
+@implementation MANYQueDetailModel
+
+@end
+
+@implementation MANYQueDetailQNModel
+
+@end

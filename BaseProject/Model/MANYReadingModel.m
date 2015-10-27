@@ -11,3 +11,7 @@
 @implementation MANYReadingModel
 
 @end
+
+@implementation MANYReadingContentModel
+
+@end

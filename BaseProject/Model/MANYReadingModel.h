@@ -42,7 +42,7 @@
 @property (nonatomic,strong)NSString *sWebLk;
 @property (nonatomic,strong)NSString *wImgUrl;
 @property (nonatomic,strong)NSNumber *sRdNum;
-@property (nonatomic,strong)NSNumber *strPraiseNumber;
+@property (nonatomic,strong)NSString *strPraiseNumber;
 @property (nonatomic,strong)NSString *strContDayDiffer;
 @property (nonatomic,strong)NSNumber *strContentId;
 @property (nonatomic,strong)NSString *strContTitle;

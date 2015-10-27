@@ -15,6 +15,7 @@
 @implementation MANYPersonalController
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    
     UIImageView *topLogo = [[UIImageView alloc]init];
     topLogo.contentMode = UIViewContentModeScaleAspectFit;
     topLogo.image = [UIImage imageNamed:@"navLogo"];

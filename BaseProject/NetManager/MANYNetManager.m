@@ -25,12 +25,14 @@
  */
 + (id)getHomeWithDate:(NSString *)date row:(NSInteger)row completionHandle:(void(^)(MANYHomeModel *model,NSError *error))completionHandle {
     NSString *path = [NSString stringWithFormat:@"http://rest.wufazhuce.com/OneForWeb/one/getHp_N?strDate=%@&strRow=%@",date,@(row)];
+    
     return [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
         completionHandle([MANYHomeModel objectWithKeyValues:responseObj],error);
     }];
 }
 + (id)getReadingWithDate:(NSString *)date row:(NSInteger)row completionHandle:(void(^)(MANYReadingModel *model,NSError *error))completionHandle {
     NSString *path = [NSString stringWithFormat:@"http://rest.wufazhuce.com/OneForWeb/one/getC_N?strDate=%@&strRow=%@&strMS=1",date,@(row)];
+#warning 拿不到responseObj
     return [self GET:path parameters:nil completionHandler:^(id responseObj, NSError *error) {
         completionHandle([MANYReadingModel objectWithKeyValues:responseObj],error);
     }];

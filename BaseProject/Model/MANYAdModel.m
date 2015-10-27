@@ -10,8 +10,11 @@
 
 @implementation MANYAdModel
 
-//+ (NSDictionary *)objectClassInArray{
-//    return @{@"lstAd":[MANYAdDetailModel class]};
-//}
-#warning 这里函数还有问题
++ (NSDictionary *)objectClassInArray{
+    return @{@"lstAd":[MANYAdDetailModel class]};
+}
+@end
+
+@implementation MANYAdDetailModel
+
 @end

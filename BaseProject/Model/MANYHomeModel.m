@@ -11,3 +11,7 @@
 @implementation MANYHomeModel
 
 @end
+
+@implementation MANYHomeHpEntityModel
+
+@end

@@ -116,32 +116,32 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tlT-cZ-MHc">
-                                            <rect key="frame" x="10" y="136" width="355" height="1"/>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tlT-cZ-MHc">
+                                            <rect key="frame" x="10" y="217" width="355" height="1"/>
                                             <animations/>
                                             <color key="backgroundColor" red="0.87450980392156863" green="0.87450980392156863" blue="0.87450980392156863" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="1" id="2pH-qa-xQ5"/>
                                             </constraints>
                                         </view>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="ans_img" translatesAutoresizingMaskIntoConstraints="NO" id="kb6-l0-5o7">
-                                            <rect key="frame" x="25" y="152" width="45" height="45"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ans_img" translatesAutoresizingMaskIntoConstraints="NO" id="kb6-l0-5o7">
+                                            <rect key="frame" x="25" y="233" width="45" height="45"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="45" id="95e-Ge-0zm"/>
                                                 <constraint firstAttribute="width" constant="45" id="pGB-1N-J4w"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKA-ON-kS6">
-                                            <rect key="frame" x="10" y="212" width="355" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JKA-ON-kS6">
+                                            <rect key="frame" x="10" y="293" width="355" height="1055"/>
                                             <animations/>
-                                            <mutableString key="text">“XXX是一种怎样的体验？”这个句式之所以会流行，说明了只要不算太浑浑噩噩的人，都有着向往更大的世界的本能。而也许你也意识到了，此时此刻在平行宇宙里，有无数个你，正在做着这个世界的你完全想不到的事情。&lt;br&gt;&lt;br&gt;不妨问问自己三个问题：&lt;br&gt;&lt;br&gt;1. 从今天早上9点到晚上9点，你做了哪些事情？拿支笔，写下来。&lt;br&gt;2. 现在的你穿越回上个星期五，和那天的你一起去竞争一份心仪的工作或是一位异性，你觉得你哪里可以胜过他？&lt;br&gt;3. 把问题1里写下来的那张纸寄给18岁的你看，想象一下他会是什么表情？&lt;br&gt;&lt;br&gt;我不觉得大部分人的生活状态和那位老师辞职前有什么本质的区别。&lt;br&gt;&lt;br&gt;许多人记不得昨天做过什么，前天吃过什么，去年和前年好像也没有什么分别。却可以清楚地记得自己14岁的某一个下午的许多许多细节。说明了什么？&lt;br&gt;&lt;br&gt;这种被大家习以为常的日复一日的循环式生活，是吞噬我们时间的黑洞，一眨眼，白驹过隙。你的主观生命流逝得非常快，因为你的大脑在逃避这种机械感。如果意识到一份工作不仅在消耗你的生命力，还在消耗你的生命，那不走干吗呢？&lt;br&gt;&lt;br&gt;去看看这个世界，并不真的要靠你的肉身走遍整个世界的每一寸角落。我理解的“去远方”，是在给定长度的人生里，尽可能体验多一些的人生。为什么大家都喜欢自助餐？我们并不差那一口吃的，我们只是喜欢手握选项的感觉。而这个世界，对所有增加“多样性”的行为，都是在偷偷鼓励的。&lt;br&gt;&lt;br&gt;这种体验，未必要和钱包挂钩。&lt;br&gt;&lt;br&gt;有些人的人生是大餐，不用你买单，就有鲍鱼海参奉上，但连吃300天，马路对面的排骨面就会对你造成不可遏制的吸引。&lt;br&gt;&lt;br&gt;但如果此时有个人拦住你，告诉你不可以去马路对面，鲍鱼海参就是你的宿命。你会不会觉得马路对面的小面馆和你咫尺天涯相看？这时候，鲍鱼还有什么滋味，五十米外的小面馆就是你的西藏，你的远方。&lt;br&gt;&lt;br&gt;所以，不要看到“远方”就只想到旅游。&lt;br&gt;&lt;br&gt;去看看这个世界，去扮演一个不一样的自己，不是靠买一张飞机票就能解决的。有多少人，坐上喷气式客机，到达这个星球上的另一面，却只是找个五星级酒店连打七天麻将，或是拿着ipad换一个地方看韩剧而已。&lt;br&gt;&lt;br&gt;至少目前，这位老师已经体验了一把“裸辞”的感觉。&lt;br&gt;&lt;br&gt;什么是去看看远方？假设她想体会一次摆小摊的人生，在她办完离职手续，从教室走到校门口支起摊位的那一刻，就已经站在远方。&lt;br&gt;&lt;br&gt;要不你也试试看？&lt;br&gt;&lt;br&gt;做一次不一样的自己，看看是一种怎样的体验？&lt;br&gt;&lt;br&gt;&lt;i&gt;作者微信公众号：肥肥猫的小酒馆。&lt;/i&gt;</mutableString>
+                                            <string key="text">“XXX是一种怎样的体验？”这个句式之所以会流行，说明了只要不算太浑浑噩噩的人，都有着向往更大的世界的本能。而也许你也意识到了，此时此刻在平行宇宙里，有无数个你，正在做着这个世界的你完全想不到的事情。&lt;br&gt;&lt;br&gt;不妨问问自己三个问题：&lt;br&gt;&lt;br&gt;1. 从今天早上9点到晚上9点，你做了哪些事情？拿支笔，写下来。&lt;br&gt;2. 现在的你穿越回上个星期五，和那天的你一起去竞争一份心仪的工作或是一位异性，你觉得你哪里可以胜过他？&lt;br&gt;3. 把问题1里写下来的那张纸寄给18岁的你看，想象一下他会是什么表情？&lt;br&gt;&lt;br&gt;我不觉得大部分人的生活状态和那位老师辞职前有什么本质的区别。&lt;br&gt;&lt;br&gt;许多人记不得昨天做过什么，前天吃过什么，去年和前年好像也没有什么分别。却可以清楚地记得自己14岁的某一个下午的许多许多细节。说明了什么？&lt;br&gt;&lt;br&gt;这种被大家习以为常的日复一日的循环式生活，是吞噬我们时间的黑洞，一眨眼，白驹过隙。你的主观生命流逝得非常快，因为你的大脑在逃避这种机械感。如果意识到一份工作不仅在消耗你的生命力，还在消耗你的生命，那不走干吗呢？&lt;br&gt;&lt;br&gt;去看看这个世界，并不真的要靠你的肉身走遍整个世界的每一寸角落。我理解的“去远方”，是在给定长度的人生里，尽可能体验多一些的人生。为什么大家都喜欢自助餐？我们并不差那一口吃的，我们只是喜欢手握选项的感觉。而这个世界，对所有增加“多样性”的行为，都是在偷偷鼓励的。&lt;br&gt;&lt;br&gt;这种体验，未必要和钱包挂钩。&lt;br&gt;&lt;br&gt;有些人的人生是大餐，不用你买单，就有鲍鱼海参奉上，但连吃300天，马路对面的排骨面就会对你造成不可遏制的吸引。&lt;br&gt;&lt;br&gt;但如果此时有个人拦住你，告诉你不可以去马路对面，鲍鱼海参就是你的宿命。你会不会觉得马路对面的小面馆和你咫尺天涯相看？这时候，鲍鱼还有什么滋味，五十米外的小面馆就是你的西藏，你的远方。&lt;br&gt;&lt;br&gt;所以，不要看到“远方”就只想到旅游。&lt;br&gt;&lt;br&gt;去看看这个世界，去扮演一个不一样的自己，不是靠买一张飞机票就能解决的。有多少人，坐上喷气式客机，到达这个星球上的另一面，却只是找个五星级酒店连打七天麻将，或是拿着ipad换一个地方看韩剧而已。&lt;br&gt;&lt;br&gt;至少目前，这位老师已经体验了一把“裸辞”的感觉。&lt;br&gt;&lt;br&gt;什么是去看看远方？假设她想体会一次摆小摊的人生，在她办完离职手续，从教室走到校门口支起摊位的那一刻，就已经站在远方。&lt;br&gt;&lt;br&gt;要不你也试试看？&lt;br&gt;&lt;br&gt;做一次不一样的自己，看看是一种怎样的体验？&lt;br&gt;&lt;br&gt;&lt;i&gt;作者微信公众号：肥肥猫的小酒馆。&lt;/i&gt;</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxm-Zy-eHM">
-                                            <rect key="frame" x="10" y="253" width="355" height="20"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gxm-Zy-eHM">
+                                            <rect key="frame" x="10" y="1368" width="355" height="20"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="20" id="9Ui-jF-Nw0"/>
@@ -150,8 +150,8 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKq-3E-UeS">
-                                            <rect key="frame" x="90" y="160" width="54" height="30"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKq-3E-UeS">
+                                            <rect key="frame" x="90" y="241" width="54" height="30"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="5cj-9X-v6A"/>
@@ -160,15 +160,15 @@
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="home_likeBg" translatesAutoresizingMaskIntoConstraints="NO" id="bjq-2P-qZd">
-                                            <rect key="frame" x="327" y="286" width="48" height="30"/>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_likeBg" translatesAutoresizingMaskIntoConstraints="NO" id="bjq-2P-qZd">
+                                            <rect key="frame" x="327" y="1401" width="48" height="30"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="30" id="9DY-JU-nKS"/>
                                             </constraints>
                                         </imageView>
-                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSk-rI-aZN">
-                                            <rect key="frame" x="337" y="293" width="38" height="15"/>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PSk-rI-aZN">
+                                            <rect key="frame" x="337" y="1408" width="38" height="15"/>
                                             <animations/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="15" id="CsU-3w-p82"/>
@@ -180,8 +180,8 @@
                                             <state key="selected" image="home_likeBg"/>
                                             <state key="highlighted" image="home_like_hl"/>
                                         </button>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="鲜奶小牙饼问：国庆结束，朋友圈的摄影大赛也告一段落，每天都要被“诗和远方”、“世界那么大，我要去看看”刷屏。为什么会这样呢？怎样在这种生活状态保持冷静或者怎样用正确的方式去“远方”？" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jt-RG-u3W">
-                                            <rect key="frame" x="10" y="98" width="355" height="21"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="鲜奶小牙饼问：国庆结束，朋友圈的摄影大赛也告一段落，每天都要被“诗和远方”、“世界那么大，我要去看看”刷屏。为什么会这样呢？怎样在这种生活状态保持冷静或者怎样用正确的方式去“远方”？" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jt-RG-u3W">
+                                            <rect key="frame" x="10" y="100" width="355" height="102"/>
                                             <animations/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -333,7 +333,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellOne" rowHeight="516" id="uxy-yd-1da">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellOne" rowHeight="516" id="uxy-yd-1da" customClass="MANYReadingCell">
                                 <rect key="frame" x="0.0" y="92" width="375" height="516"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uxy-yd-1da" id="Jxs-CE-Q8s">
@@ -394,7 +394,7 @@
                                             <state key="normal" title="8092" image="home_like">
                                                 <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
-                                            <state key="selected" image="home_like_hi"/>
+                                            <state key="selected" image="home_like_hl"/>
                                             <state key="highlighted" image="home_like_hl"/>
                                         </button>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_likeBg" translatesAutoresizingMaskIntoConstraints="NO" id="aG4-mj-2GU">
@@ -484,6 +484,17 @@
                                 </tableViewCellContentView>
                                 <animations/>
                                 <inset key="separatorInset" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                <connections>
+                                    <outlet property="TitleLB" destination="0S0-3D-bdU" id="fsx-Lo-pDI"/>
+                                    <outlet property="contentLB" destination="gsY-zl-14g" id="oL2-gQ-yLk"/>
+                                    <outlet property="dateLB" destination="yd7-Dg-PsW" id="BVE-Zp-Nm8"/>
+                                    <outlet property="dazuozheLB" destination="Aap-vg-Ute" id="vL1-KE-79T"/>
+                                    <outlet property="introduceLB" destination="1KN-Uy-HQg" id="PiK-Jh-RDM"/>
+                                    <outlet property="pnButton" destination="tgD-Vh-Z6s" id="l8w-6a-wIl"/>
+                                    <outlet property="zuozheIntroLB" destination="qVb-mF-Y24" id="sCR-RC-beB"/>
+                                    <outlet property="zuozheLB" destination="M66-uk-QYw" id="AuG-L2-Qmp"/>
+                                    <outlet property="zuozheweiboLB" destination="TUd-hn-tj7" id="i8n-MC-TuK"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -495,7 +506,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bfY-gY-yYM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2211.5" y="-342.5"/>
+            <point key="canvasLocation" x="2257.5" y="-342.5"/>
         </scene>
         <!--Home Controller-->
         <scene sceneID="1On-PN-Beg">
@@ -507,7 +518,7 @@
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="519" id="sog-xM-uww">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="cell" rowHeight="519" id="sog-xM-uww" customClass="MANYHomeCell">
                                 <rect key="frame" x="0.0" y="92" width="375" height="519"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sog-xM-uww" id="SKa-VR-6Lg">
@@ -527,7 +538,6 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_1420.JPG" translatesAutoresizingMaskIntoConstraints="NO" id="FXC-3W-YaL">
                                             <rect key="frame" x="10" y="40" width="355" height="260"/>
                                             <animations/>
-                                            <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="260" id="Tip-6A-KYb"/>
                                             </constraints>
@@ -581,21 +591,21 @@
                                                     <animations/>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="人类的一个大麻烦，在于我们无法拥有说一不二的感情，敌人身上总有让我们喜欢的地方，我们的爱人身上总会有让我们讨厌之处。by 叶芝" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hMH-we-K4m">
-                                                    <rect key="frame" x="95" y="13" width="250" height="67"/>
+                                                    <rect key="frame" x="95" y="13" width="240" height="67"/>
                                                     <animations/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home_likeBg" translatesAutoresizingMaskIntoConstraints="NO" id="pGz-Gx-iEc">
-                                                    <rect key="frame" x="293" y="115" width="67" height="25"/>
+                                                    <rect key="frame" x="288" y="115" width="72" height="25"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="grW-vL-uwe"/>
                                                     </constraints>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuB-yp-fEn">
-                                                    <rect key="frame" x="303" y="115" width="57" height="25"/>
+                                                    <rect key="frame" x="298" y="115" width="57" height="25"/>
                                                     <animations/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="25" id="8iM-2Z-ugU"/>
@@ -607,6 +617,9 @@
                                                     </state>
                                                     <state key="selected" image="home_like_hl"/>
                                                     <state key="highlighted" image="home_like_hl"/>
+                                                    <connections>
+                                                        <action selector="StrPnClick:" destination="sog-xM-uww" eventType="touchUpInside" id="Clb-Sv-6If"/>
+                                                    </connections>
                                                 </button>
                                             </subviews>
                                             <animations/>
@@ -617,9 +630,9 @@
                                                 <constraint firstItem="NuB-yp-fEn" firstAttribute="top" secondItem="jeh-WE-YYF" secondAttribute="bottom" constant="25" id="Cwm-UY-rW6"/>
                                                 <constraint firstItem="hMH-we-K4m" firstAttribute="top" secondItem="QsX-HZ-4Os" secondAttribute="top" constant="13" id="Fnt-rP-I1h"/>
                                                 <constraint firstAttribute="trailing" secondItem="jeh-WE-YYF" secondAttribute="trailing" constant="20" id="IkR-WJ-x98"/>
-                                                <constraint firstItem="pGz-Gx-iEc" firstAttribute="width" secondItem="NuB-yp-fEn" secondAttribute="width" constant="10" id="KIP-JW-xrF"/>
+                                                <constraint firstItem="pGz-Gx-iEc" firstAttribute="width" secondItem="NuB-yp-fEn" secondAttribute="width" constant="15" id="KIP-JW-xrF"/>
                                                 <constraint firstItem="SYc-NW-Rb9" firstAttribute="top" secondItem="Lky-5g-A0q" secondAttribute="bottom" id="Nou-yU-CcP"/>
-                                                <constraint firstAttribute="trailing" secondItem="NuB-yp-fEn" secondAttribute="trailing" id="RFT-AS-SbC"/>
+                                                <constraint firstAttribute="trailing" secondItem="NuB-yp-fEn" secondAttribute="trailing" constant="5" id="RFT-AS-SbC"/>
                                                 <constraint firstItem="jeh-WE-YYF" firstAttribute="leading" secondItem="SYc-NW-Rb9" secondAttribute="trailing" constant="20" id="Ub0-gc-Ogz"/>
                                                 <constraint firstItem="Lky-5g-A0q" firstAttribute="leading" secondItem="QsX-HZ-4Os" secondAttribute="leading" constant="5" id="Xp9-Kr-znL"/>
                                                 <constraint firstAttribute="height" constant="130" id="aqT-bA-SH6"/>
@@ -627,7 +640,7 @@
                                                 <constraint firstItem="Lky-5g-A0q" firstAttribute="centerX" secondItem="QsX-HZ-4Os" secondAttribute="centerX" id="c1e-FN-oRF"/>
                                                 <constraint firstItem="SYc-NW-Rb9" firstAttribute="centerX" secondItem="Lky-5g-A0q" secondAttribute="centerX" id="gkc-fN-klT"/>
                                                 <constraint firstItem="jeh-WE-YYF" firstAttribute="top" secondItem="QsX-HZ-4Os" secondAttribute="top" constant="5" id="lTR-7y-0j8"/>
-                                                <constraint firstAttribute="trailing" secondItem="hMH-we-K4m" secondAttribute="trailing" constant="15" id="nHi-A7-rxf"/>
+                                                <constraint firstAttribute="trailing" secondItem="hMH-we-K4m" secondAttribute="trailing" constant="25" id="nHi-A7-rxf"/>
                                                 <constraint firstItem="jeh-WE-YYF" firstAttribute="height" relation="greaterThanOrEqual" secondItem="hMH-we-K4m" secondAttribute="height" constant="18" id="vtH-6k-JC2"/>
                                                 <constraint firstItem="hMH-we-K4m" firstAttribute="leading" secondItem="Lky-5g-A0q" secondAttribute="trailing" constant="35" id="wi0-ne-4SI"/>
                                             </constraints>
@@ -663,6 +676,16 @@
                                     </variation>
                                 </tableViewCellContentView>
                                 <animations/>
+                                <connections>
+                                    <outlet property="content" destination="hMH-we-K4m" id="5HE-Wf-Tyx"/>
+                                    <outlet property="day" destination="Lky-5g-A0q" id="bWH-rn-xgO"/>
+                                    <outlet property="image" destination="FXC-3W-YaL" id="Bkn-ir-Zak"/>
+                                    <outlet property="monthYear" destination="SYc-NW-Rb9" id="mhQ-sm-KdY"/>
+                                    <outlet property="strHpTitle" destination="AXU-wN-cuw" id="Ouv-Rp-1jM"/>
+                                    <outlet property="strPn" destination="NuB-yp-fEn" id="Tfm-Td-TIu"/>
+                                    <outlet property="zuoPin" destination="HpK-l8-IEf" id="S1V-XH-MpS"/>
+                                    <outlet property="zuoZhe" destination="uVv-nx-sJE" id="gHz-T0-Xpo"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -783,7 +806,6 @@
         <image name="contBack" width="209" height="29"/>
         <image name="home_like" width="12" height="10"/>
         <image name="home_likeBg" width="31" height="28"/>
-        <image name="home_like_hi" width="200" height="200"/>
         <image name="home_like_hl" width="12" height="10"/>
         <image name="que_img" width="36" height="36"/>
     </resources>

@@ -7,14 +7,24 @@
 //
 
 #import "MANYReadingController.h"
-
+#import "MANYReadingCell.h"
+#import "MANYReadingViewModel.h"
 @interface MANYReadingController ()
+@property (nonatomic,strong)MANYReadingCell *cell;
+@property (nonatomic,strong)MANYReadingViewModel *readingVM;
 
 @end
 
 @implementation MANYReadingController
+- (MANYReadingViewModel *)readingVM {
+    if (!_readingVM) {
+        _readingVM = [MANYReadingViewModel new];
+    }
+    return _readingVM;
+}
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    
     UIImageView *topLogo = [[UIImageView alloc]init];
     topLogo.contentMode = UIViewContentModeScaleAspectFit;
     topLogo.image = [UIImage imageNamed:@"navLogo"];
@@ -27,11 +37,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
+    self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self.readingVM refreshDataCompletionHandle:^(NSError *error) {
+            [self.tableView.header endRefreshing];
+            [self.tableView reloadData];
+        }];
+    }];
+    [self.tableView.header beginRefreshing];
     
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,57 +61,32 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellOne" ];
+    MANYReadingCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellOne" ];
+    self.cell = cell;
+    [self configureCell];
     return cell;
 }
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
 
-    return 700;
+    return self.cell.zuozheIntroLB.frame.origin.y+self.cell.zuozheIntroLB.frame.size.height+20;
 
 }
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
+- (void)configureCell {
+//    self.cell.strHpTitle.text = [self.homeVM getStrHpTitle];
+//    [self.cell.image setImageWithURL:[self.homeVM getThumbnailUrl]];
+//    self.cell.content.text = [self.homeVM getStrContent];
+//    [self.cell.strPn setTitle:[self.homeVM getStrPn].stringValue forState:(UIControlStateNormal)];
+//    self.cell.zuoZhe.text = [[self.homeVM getStrAuther] componentsSeparatedByString:@"&"][0];
+//    self.cell.zuoPin.text = [[self.homeVM getStrAuther] componentsSeparatedByString:@"&"][1];
+//    
+//    
+//    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+//    [formatter setDateFormat:@"dd&MMM ,yyyy"];
+//    NSString *dateStr = [formatter stringFromDate:[MANYTool dateFromString:[self.homeVM getStrMarketTime]]];
+//    NSArray *arr = [dateStr componentsSeparatedByString:@"&"];
+//    self.cell.day.text = arr[0];
+//    self.cell.monthYear.text = [NSString stringWithFormat:@"%@",arr[1]];
+    
+    
 }
-*/
-
-/*
-// Override to support editing the table view.
-- (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
-}
-*/
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
-
 @end

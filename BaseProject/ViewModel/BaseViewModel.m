@@ -10,4 +10,17 @@
 
 @implementation BaseViewModel
 
+- (void)cancelTask{
+    [self.dataTask cancel];
+}
+
+- (void)suspendTask{
+    [self.dataTask suspend];
+}
+
+- (void)resumeTask{
+    [self.dataTask resume];
+}
+
+
 @end

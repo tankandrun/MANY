@@ -11,3 +11,7 @@
 @implementation MANYThingModel
 
 @end
+
+@implementation MANYThingDetailModel
+
+@end

@@ -15,6 +15,7 @@
 @implementation MANYThingController
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    
     UIImageView *topLogo = [[UIImageView alloc]init];
     topLogo.contentMode = UIViewContentModeScaleAspectFit;
     topLogo.image = [UIImage imageNamed:@"navLogo"];
@@ -35,6 +36,7 @@
     self.tableView.tableFooterView = [[UIView alloc]init];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.showsVerticalScrollIndicator = NO;
+    self.tableView.userInteractionEnabled = NO;
 }
 
 - (void)didReceiveMemoryWarning {
