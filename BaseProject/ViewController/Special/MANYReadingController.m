@@ -9,6 +9,7 @@
 #import "MANYReadingController.h"
 #import "MANYReadingCell.h"
 #import "MANYReadingViewModel.h"
+#import "MANYTool.h"
 @interface MANYReadingController ()
 @property (nonatomic,strong)MANYReadingCell *cell;
 @property (nonatomic,strong)MANYReadingViewModel *readingVM;
@@ -39,8 +40,8 @@
     
     self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
         [self.readingVM refreshDataCompletionHandle:^(NSError *error) {
-            [self.tableView.header endRefreshing];
             [self.tableView reloadData];
+            [self.tableView.header endRefreshing];
         }];
     }];
     [self.tableView.header beginRefreshing];
@@ -58,7 +59,6 @@
     return 1;
 }
 
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
 
     MANYReadingCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellOne" ];
@@ -66,27 +66,26 @@
     [self configureCell];
     return cell;
 }
+
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-
-    return self.cell.zuozheIntroLB.frame.origin.y+self.cell.zuozheIntroLB.frame.size.height+20;
-
+    
+//    CGRect rect = self.cell.zuozheIntroLB.frame;
+//    NSLog(@"%f,%f,%f,%f",rect.origin.x,rect.origin.y,rect.size.height,rect.size.width);
+    
+    //self.cell.zuozheIntroLB.frame.origin.y+self.cell.zuozheIntroLB.frame.size.height+20
+//    return self.cell.zuozheIntroLB.frame.origin.y+self.cell.zuozheIntroLB.frame.size.height+20;
+    return self.cell.TitleLB.frame.origin.y + self.cell.TitleLB.frame.size.height + self.cell.contentLB.frame.size.height;
 }
+
 - (void)configureCell {
-//    self.cell.strHpTitle.text = [self.homeVM getStrHpTitle];
-//    [self.cell.image setImageWithURL:[self.homeVM getThumbnailUrl]];
-//    self.cell.content.text = [self.homeVM getStrContent];
-//    [self.cell.strPn setTitle:[self.homeVM getStrPn].stringValue forState:(UIControlStateNormal)];
-//    self.cell.zuoZhe.text = [[self.homeVM getStrAuther] componentsSeparatedByString:@"&"][0];
-//    self.cell.zuoPin.text = [[self.homeVM getStrAuther] componentsSeparatedByString:@"&"][1];
-//    
-//    
-//    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-//    [formatter setDateFormat:@"dd&MMM ,yyyy"];
-//    NSString *dateStr = [formatter stringFromDate:[MANYTool dateFromString:[self.homeVM getStrMarketTime]]];
-//    NSArray *arr = [dateStr componentsSeparatedByString:@"&"];
-//    self.cell.day.text = arr[0];
-//    self.cell.monthYear.text = [NSString stringWithFormat:@"%@",arr[1]];
-    
-    
+    self.cell.TitleLB.text = [self.readingVM getStrContTitle];
+    self.cell.zuozheLB.text = [self.readingVM getStrContAuthor];
+    self.cell.dazuozheLB.text = [self.readingVM getStrContAuthor];
+    self.cell.contentLB.text = [self.readingVM getStrContent];
+    self.cell.introduceLB.text = [self.readingVM getStrContAuthorIntroduce];
+    [self.cell.pnButton setTitle:[self.readingVM getStrPraiseNumber] forState:(UIControlStateNormal)];
+    self.cell.zuozheweiboLB.text = [self.readingVM getsWbN];
+    self.cell.zuozheIntroLB.text = [self.readingVM getsAuth];
+    self.cell.dateLB.text = [self.readingVM getStrContMarketTime];
 }
 @end
