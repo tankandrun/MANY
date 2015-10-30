@@ -17,4 +17,10 @@
     // 标准时间
     return [inputFormatter dateFromString:dateStr];
 }
++ (NSString *)getBigDateFromString:(NSString *)dateStr {
+    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
+    [formatter setDateFormat:@"MMMM dd, yyyy"];
+    NSString *date = [formatter stringFromDate:[self dateFromString:dateStr]];
+    return date;
+}
 @end

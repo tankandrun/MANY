@@ -85,8 +85,6 @@
     self.cell.day.text = arr[0];
     self.cell.day.textColor = myTintRGB;
     self.cell.monthYear.text = [NSString stringWithFormat:@"%@",arr[1]];
-
-
 }
 
 

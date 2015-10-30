@@ -20,6 +20,10 @@
 		3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0BA1BD74AE90014E661 /* BaseViewModel.m */; settings = {ASSET_TAGS = (); }; };
 		3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */; settings = {ASSET_TAGS = (); }; };
 		3886C0C11BD74B090014E661 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0C01BD74B090014E661 /* BaseModel.m */; settings = {ASSET_TAGS = (); }; };
+		4E0088331BE3809A0084051B /* MANYQueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0088321BE3809A0084051B /* MANYQueCell.m */; settings = {ASSET_TAGS = (); }; };
+		4E0088361BE382A70084051B /* MANYQueViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0088351BE382A70084051B /* MANYQueViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		4E0088391BE390600084051B /* MANYThingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0088381BE390600084051B /* MANYThingCell.m */; settings = {ASSET_TAGS = (); }; };
+		4E00883C1BE392E10084051B /* MANYThingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E00883B1BE392E10084051B /* MANYThingViewModel.m */; settings = {ASSET_TAGS = (); }; };
 		4E1142D71BDE39C1001987DA /* MANYReadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142D61BDE39C1001987DA /* MANYReadingController.m */; settings = {ASSET_TAGS = (); }; };
 		4E1142DA1BDE443E001987DA /* MANYQueController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142D91BDE443E001987DA /* MANYQueController.m */; settings = {ASSET_TAGS = (); }; };
 		4E1142DD1BDE50BC001987DA /* MANYThingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142DC1BDE50BC001987DA /* MANYThingController.m */; settings = {ASSET_TAGS = (); }; };
@@ -66,6 +70,14 @@
 		3886C0C01BD74B090014E661 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
 		3886C0C21BD74B430014E661 /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		4329DABFE5AD654FE71597C9 /* Pods-BaseProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.debug.xcconfig"; sourceTree = "<group>"; };
+		4E0088311BE3809A0084051B /* MANYQueCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYQueCell.h; sourceTree = "<group>"; };
+		4E0088321BE3809A0084051B /* MANYQueCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYQueCell.m; sourceTree = "<group>"; };
+		4E0088341BE382A70084051B /* MANYQueViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYQueViewModel.h; sourceTree = "<group>"; };
+		4E0088351BE382A70084051B /* MANYQueViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYQueViewModel.m; sourceTree = "<group>"; };
+		4E0088371BE390600084051B /* MANYThingCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYThingCell.h; sourceTree = "<group>"; };
+		4E0088381BE390600084051B /* MANYThingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYThingCell.m; sourceTree = "<group>"; };
+		4E00883A1BE392E10084051B /* MANYThingViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYThingViewModel.h; sourceTree = "<group>"; };
+		4E00883B1BE392E10084051B /* MANYThingViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYThingViewModel.m; sourceTree = "<group>"; };
 		4E1142D51BDE39C1001987DA /* MANYReadingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYReadingController.h; sourceTree = "<group>"; };
 		4E1142D61BDE39C1001987DA /* MANYReadingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYReadingController.m; sourceTree = "<group>"; };
 		4E1142D81BDE443E001987DA /* MANYQueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYQueController.h; sourceTree = "<group>"; };
@@ -252,6 +264,10 @@
 				4E3AF25A1BDF147200FFA1B0 /* MANYHomeCell.m */,
 				4EF7DF541BDFAFB900BA2744 /* MANYReadingCell.h */,
 				4EF7DF551BDFAFB900BA2744 /* MANYReadingCell.m */,
+				4E0088311BE3809A0084051B /* MANYQueCell.h */,
+				4E0088321BE3809A0084051B /* MANYQueCell.m */,
+				4E0088371BE390600084051B /* MANYThingCell.h */,
+				4E0088381BE390600084051B /* MANYThingCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -274,6 +290,10 @@
 				4E3AF2571BDF13FF00FFA1B0 /* MANYHomeViewModel.m */,
 				4EF7DF571BDFB1A000BA2744 /* MANYReadingViewModel.h */,
 				4EF7DF581BDFB1A000BA2744 /* MANYReadingViewModel.m */,
+				4E0088341BE382A70084051B /* MANYQueViewModel.h */,
+				4E0088351BE382A70084051B /* MANYQueViewModel.m */,
+				4E00883A1BE392E10084051B /* MANYThingViewModel.h */,
+				4E00883B1BE392E10084051B /* MANYThingViewModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -445,6 +465,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E0088331BE3809A0084051B /* MANYQueCell.m in Sources */,
+				4E0088361BE382A70084051B /* MANYQueViewModel.m in Sources */,
 				3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */,
 				4E1142DD1BDE50BC001987DA /* MANYThingController.m in Sources */,
 				4E1142E01BDE559E001987DA /* MANYPersonalController.m in Sources */,
@@ -455,10 +477,12 @@
 				4E1142DA1BDE443E001987DA /* MANYQueController.m in Sources */,
 				4EF7DF5C1BDFB69C00BA2744 /* MANYTool.m in Sources */,
 				3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */,
+				4E00883C1BE392E10084051B /* MANYThingViewModel.m in Sources */,
 				3886C09B1BD748830014E661 /* AppDelegate.m in Sources */,
 				3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */,
 				4EF7DF561BDFAFB900BA2744 /* MANYReadingCell.m in Sources */,
 				4E1142E91BDE6254001987DA /* MANYHomeModel.m in Sources */,
+				4E0088391BE390600084051B /* MANYThingCell.m in Sources */,
 				3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */,
 				4EF7DF591BDFB1A000BA2744 /* MANYReadingViewModel.m in Sources */,
 				4E1FE2831BDDCD46009550FB /* MANYTabBarController.m in Sources */,

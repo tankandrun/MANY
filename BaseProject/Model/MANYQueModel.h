@@ -37,7 +37,7 @@
 @property (nonatomic,strong)NSString *strLastUpdateDate;
 @property (nonatomic,strong)NSString *strDayDiffer;
 @property (nonatomic,strong)NSString *sWebLk;
-@property (nonatomic,strong)NSNumber *strPraiseNumber;
+@property (nonatomic,strong)NSString *strPraiseNumber;
 @property (nonatomic,strong)NSNumber *strQuestionId;
 @property (nonatomic,strong)NSString *strQuestionTitle;
 @property (nonatomic,strong)NSString *strQuestionContent;

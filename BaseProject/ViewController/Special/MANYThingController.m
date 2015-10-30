@@ -7,12 +7,22 @@
 //
 
 #import "MANYThingController.h"
-
+#import "MANYThingCell.h"
+#import "MANYThingViewModel.h"
+#import "MANYTool.h"
 @interface MANYThingController ()
+@property (nonatomic,strong)MANYThingViewModel *thingVM;
+@property (nonatomic,strong)MANYThingCell *cell;
 
 @end
 
 @implementation MANYThingController
+- (MANYThingViewModel *)thingVM {
+    if (!_thingVM) {
+        _thingVM = [MANYThingViewModel new];
+    }
+    return _thingVM;
+}
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
@@ -36,7 +46,15 @@
     self.tableView.tableFooterView = [[UIView alloc]init];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.showsVerticalScrollIndicator = NO;
-    self.tableView.userInteractionEnabled = NO;
+    self.tableView.allowsSelection = NO;
+    
+    self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
+        [self.thingVM refreshDataCompletionHandle:^(NSError *error) {
+            [self.tableView reloadData];
+            [self.tableView.header endRefreshing];
+        }];
+    }];
+    [self.tableView.header beginRefreshing];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -49,16 +67,31 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return 1;
 }
-
-
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-    
+    MANYThingCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
+    self.cell = cell;
+    [self configureCell];
     return cell;
 }
-
+- (void)configureCell {
+    self.cell.dateLB.text = [self.thingVM getDateLB];
+    [self.cell.strBULB setImageWithURL:[NSURL URLWithString:[self.thingVM getImg]]];
+    self.cell.strTtLB.text = [self.thingVM getTitle];
+    self.cell.strTcLB.text = [self.thingVM getContent];
+}
+#pragma mark - UITableViewDelegate
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return 600;
+    
+    CGFloat height = self.cell.strBULB.frame.origin.y + self.cell.strBULB.frame.size.height;
+    //获取QUELB的高度
+    CGRect rectOfTitle = CGRectMake(0, 0, kWindowW-130, 999);
+    rectOfTitle = [self.cell.strTtLB textRectForBounds:rectOfTitle limitedToNumberOfLines:0];
+    //获取ANSLB的高度
+    CGRect rectOfContent = CGRectMake(0, 0, kWindowW-20, 999);
+    rectOfContent = [self.cell.strTcLB textRectForBounds:rectOfContent limitedToNumberOfLines:0];
+    
+    return height+rectOfTitle.size.height*1.0+90+rectOfContent.size.height*1.0+40;
+
 }
 
 /*

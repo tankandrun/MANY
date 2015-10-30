@@ -13,4 +13,8 @@
  *  将日期的字符串转换为NSDate类型
  */
 + (NSDate *)dateFromString:(NSString *)dateStr;
+/**
+ *  获取MMMM dd, yyyy型的日期
+ */
++ (NSString *)getBigDateFromString:(NSString *)dateStr;
 @end

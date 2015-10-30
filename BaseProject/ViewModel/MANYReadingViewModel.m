@@ -26,20 +26,14 @@ static int row = 0;
 }
 - (MANYReadingContentModel *)getModel {
     if (row == 0) {
-        NSLog(@"");
         return nil;
     }else {
-        NSLog(@"");
         return self.readingDataArr[row-1];
     }
 }
 #pragma mark - 获得数据
 - (NSString *)getStrContMarketTime {
-
-    NSDateFormatter *formatter = [[NSDateFormatter alloc]init];
-    [formatter setDateFormat:@"MMMM dd, yyyy"];
-    NSString *date = [formatter stringFromDate:[MANYTool dateFromString:[self getModel].strContMarketTime]];
-    return date;
+    return [MANYTool getBigDateFromString:[self getModel].strContMarketTime];
 }
 - (NSString *)getStrContent {
     return [self getModel].strContent;
@@ -80,7 +74,7 @@ static int row = 0;
 }
 //获取数据
 - (void)getDataFromNetCompleteHandle:(CompletionHandle)completionHandle {
-    [MANYNetManager getReadingWithDate:[self getCurrentDate] row:row completionHandle:^(MANYReadingModel *model, NSError *error) {
+    [MANYNetManager getReadingWithDate:[self getCurrentDate] row:(row) completionHandle:^(MANYReadingModel *model, NSError *error) {
         
         if (row == 1) {
             [self.readingDataArr removeAllObjects];

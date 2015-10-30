@@ -45,7 +45,7 @@
         }];
     }];
     [self.tableView.header beginRefreshing];
-    
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -66,17 +66,6 @@
     [self configureCell];
     return cell;
 }
-
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    
-//    CGRect rect = self.cell.zuozheIntroLB.frame;
-//    NSLog(@"%f,%f,%f,%f",rect.origin.x,rect.origin.y,rect.size.height,rect.size.width);
-    
-    //self.cell.zuozheIntroLB.frame.origin.y+self.cell.zuozheIntroLB.frame.size.height+20
-//    return self.cell.zuozheIntroLB.frame.origin.y+self.cell.zuozheIntroLB.frame.size.height+20;
-    return self.cell.TitleLB.frame.origin.y + self.cell.TitleLB.frame.size.height + self.cell.contentLB.frame.size.height;
-}
-
 - (void)configureCell {
     self.cell.TitleLB.text = [self.readingVM getStrContTitle];
     self.cell.zuozheLB.text = [self.readingVM getStrContAuthor];
@@ -88,4 +77,24 @@
     self.cell.zuozheIntroLB.text = [self.readingVM getsAuth];
     self.cell.dateLB.text = [self.readingVM getStrContMarketTime];
 }
+
+#pragma mark - UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    
+    CGFloat height = self.cell.zuozheLB.frame.origin.y + self.cell.zuozheLB.frame.size.height;
+    //获取文章LB的高度
+    CGRect rectOfContent = CGRectMake(0, 0, kWindowW-20, 20000);
+    rectOfContent = [self.cell.contentLB textRectForBounds:rectOfContent limitedToNumberOfLines:0];
+    //获取introduceLB的高度
+    CGRect rectOfIntroduceLB = CGRectMake(0, 0, kWindowW-20, 999);
+    rectOfIntroduceLB = [self.cell.introduceLB textRectForBounds:rectOfIntroduceLB limitedToNumberOfLines:0];
+    //获取zuozheIntroLB的高度
+    CGRect rectOfZuozheIntroLB = CGRectMake(0, 0, kWindowW-20, 999);
+    rectOfZuozheIntroLB = [self.cell.zuozheIntroLB textRectForBounds:rectOfZuozheIntroLB limitedToNumberOfLines:0];
+ 
+    height = height+rectOfContent.size.height*1.0+rectOfIntroduceLB.size.height*1.0+rectOfZuozheIntroLB.size.height*1.0+90+25+60+60;
+    return height;
+}
+
+
 @end
