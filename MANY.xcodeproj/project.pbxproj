@@ -24,6 +24,8 @@
 		4E0088361BE382A70084051B /* MANYQueViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0088351BE382A70084051B /* MANYQueViewModel.m */; settings = {ASSET_TAGS = (); }; };
 		4E0088391BE390600084051B /* MANYThingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0088381BE390600084051B /* MANYThingCell.m */; settings = {ASSET_TAGS = (); }; };
 		4E00883C1BE392E10084051B /* MANYThingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E00883B1BE392E10084051B /* MANYThingViewModel.m */; settings = {ASSET_TAGS = (); }; };
+		4E0088401BE3AB1F0084051B /* MANYAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E00883F1BE3AB1F0084051B /* MANYAboutController.m */; settings = {ASSET_TAGS = (); }; };
+		4E0088461BE3B2370084051B /* MANYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0088451BE3B2370084051B /* MANYSettingController.m */; settings = {ASSET_TAGS = (); }; };
 		4E1142D71BDE39C1001987DA /* MANYReadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142D61BDE39C1001987DA /* MANYReadingController.m */; settings = {ASSET_TAGS = (); }; };
 		4E1142DA1BDE443E001987DA /* MANYQueController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142D91BDE443E001987DA /* MANYQueController.m */; settings = {ASSET_TAGS = (); }; };
 		4E1142DD1BDE50BC001987DA /* MANYThingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142DC1BDE50BC001987DA /* MANYThingController.m */; settings = {ASSET_TAGS = (); }; };
@@ -78,6 +80,10 @@
 		4E0088381BE390600084051B /* MANYThingCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYThingCell.m; sourceTree = "<group>"; };
 		4E00883A1BE392E10084051B /* MANYThingViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYThingViewModel.h; sourceTree = "<group>"; };
 		4E00883B1BE392E10084051B /* MANYThingViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYThingViewModel.m; sourceTree = "<group>"; };
+		4E00883E1BE3AB1F0084051B /* MANYAboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYAboutController.h; sourceTree = "<group>"; };
+		4E00883F1BE3AB1F0084051B /* MANYAboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYAboutController.m; sourceTree = "<group>"; };
+		4E0088441BE3B2370084051B /* MANYSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYSettingController.h; sourceTree = "<group>"; };
+		4E0088451BE3B2370084051B /* MANYSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYSettingController.m; sourceTree = "<group>"; };
 		4E1142D51BDE39C1001987DA /* MANYReadingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYReadingController.h; sourceTree = "<group>"; };
 		4E1142D61BDE39C1001987DA /* MANYReadingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYReadingController.m; sourceTree = "<group>"; };
 		4E1142D81BDE443E001987DA /* MANYQueController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYQueController.h; sourceTree = "<group>"; };
@@ -298,6 +304,17 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		4E00883D1BE3AB020084051B /* MoreFromPersonal */ = {
+			isa = PBXGroup;
+			children = (
+				4E00883E1BE3AB1F0084051B /* MANYAboutController.h */,
+				4E00883F1BE3AB1F0084051B /* MANYAboutController.m */,
+				4E0088441BE3B2370084051B /* MANYSettingController.h */,
+				4E0088451BE3B2370084051B /* MANYSettingController.m */,
+			);
+			name = MoreFromPersonal;
+			sourceTree = "<group>";
+		};
 		4E1FE2801BDDCD46009550FB /* Common */ = {
 			isa = PBXGroup;
 			children = (
@@ -320,6 +337,7 @@
 				4E1142DC1BDE50BC001987DA /* MANYThingController.m */,
 				4E1142DE1BDE559E001987DA /* MANYPersonalController.h */,
 				4E1142DF1BDE559E001987DA /* MANYPersonalController.m */,
+				4E00883D1BE3AB020084051B /* MoreFromPersonal */,
 			);
 			path = Special;
 			sourceTree = "<group>";
@@ -474,7 +492,9 @@
 				4E3AF2551BDF12E900FFA1B0 /* MANYHomeController.m in Sources */,
 				4E1142D71BDE39C1001987DA /* MANYReadingController.m in Sources */,
 				3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */,
+				4E0088461BE3B2370084051B /* MANYSettingController.m in Sources */,
 				4E1142DA1BDE443E001987DA /* MANYQueController.m in Sources */,
+				4E0088401BE3AB1F0084051B /* MANYAboutController.m in Sources */,
 				4EF7DF5C1BDFB69C00BA2744 /* MANYTool.m in Sources */,
 				3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */,
 				4E00883C1BE392E10084051B /* MANYThingViewModel.m in Sources */,
@@ -598,6 +618,7 @@
 			baseConfigurationReference = 4329DABFE5AD654FE71597C9 /* Pods-BaseProject.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = BaseProject/Resource/PrefixHeader.pch;
 				INFOPLIST_FILE = BaseProject/Info.plist;
@@ -613,6 +634,7 @@
 			baseConfigurationReference = DD4F0750B5DAAA87BA236B31 /* Pods-BaseProject.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PREFIX_HEADER = BaseProject/Resource/PrefixHeader.pch;
 				INFOPLIST_FILE = BaseProject/Info.plist;

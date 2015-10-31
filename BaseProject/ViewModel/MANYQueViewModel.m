@@ -10,7 +10,13 @@
 #import "MANYNetManager.h"
 #import "MANYTool.h"
 @implementation MANYQueViewModel
-static int row = 0;
+//static int row = 0;
+- (NSInteger)row {
+    if (!_row) {
+        _row = 0;
+    }
+    return _row;
+}
 - (NSMutableArray *)queDataArr {
     if (!_queDataArr) {
         _queDataArr = [NSMutableArray new];
@@ -24,10 +30,10 @@ static int row = 0;
     return date;
 }
 - (MANYQueDetailModel *)getModel {
-    if (row == 0) {
+    if (_row == 0) {
         return nil;
     }else {
-        return self.queDataArr[row-1];
+        return self.queDataArr[_row-1];
     }
 }
 #pragma mark - 获取数据
@@ -55,23 +61,23 @@ static int row = 0;
 #pragma mark - 网络请求
 //获取更多
 - (void)getMoreDataCompletionHandle:(CompletionHandle)completionHandle {
-    if (row == 11) {
+    if (_row == 11) {
         NSError *error = [NSError errorWithDomain:@"" code:0 userInfo:nil];
         completionHandle(error);
     }else {
-        row += 1;
+        _row += 1;
         [self getDataFromNetCompleteHandle:completionHandle];
     }
 }
 //刷新
 - (void)refreshDataCompletionHandle:(CompletionHandle)completionHandle {
-    row = 1;
+    _row = 1;
     [self getDataFromNetCompleteHandle:completionHandle];
 }
 //获取数据
 - (void)getDataFromNetCompleteHandle:(CompletionHandle)completionHandle {
-    [MANYNetManager getQueWithDate:[self getCurrentDate] row:row completionHandle:^(MANYQueModel *model, NSError *error) {
-        if (row == 1) {
+    [MANYNetManager getQueWithDate:[self getCurrentDate] row:_row completionHandle:^(MANYQueModel *model, NSError *error) {
+        if (_row == 1) {
             [self.queDataArr removeAllObjects];
         }
         

@@ -9,6 +9,8 @@
 #import "BaseViewModel.h"
 #import "MANYThingModel.h"
 @interface MANYThingViewModel : BaseViewModel
+@property (nonatomic)NSInteger row;
+
 @property (nonatomic,strong)NSMutableArray *thingDataArr;
 
 - (MANYThingDetailModel *)getModel;

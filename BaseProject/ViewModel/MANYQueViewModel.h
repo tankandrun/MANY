@@ -9,6 +9,8 @@
 #import "BaseViewModel.h"
 #import "MANYQueModel.h"
 @interface MANYQueViewModel : BaseViewModel
+@property (nonatomic)NSInteger row;
+
 @property (nonatomic,strong)NSMutableArray *queDataArr;
 
 - (MANYQueDetailModel *)getModel;

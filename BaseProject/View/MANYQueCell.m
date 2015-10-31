@@ -19,5 +19,8 @@
 
     // Configure the view for the selected state
 }
+- (IBAction)click:(id)sender {
+    self.priseNumLB.selected = !self.priseNumLB.isSelected;
+}
 
 @end

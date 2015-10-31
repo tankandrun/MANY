@@ -9,7 +9,7 @@
 #import "BaseViewModel.h"
 #import "MANYHomeModel.h"
 @interface MANYHomeViewModel : BaseViewModel
-//@property (nonatomic)NSInteger row;
+@property (nonatomic)NSInteger row;
 
 @property(nonatomic,strong) NSMutableArray *dataArr;
 - (MANYHomeHpEntityModel *)getModel;

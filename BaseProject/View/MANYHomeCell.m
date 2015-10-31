@@ -21,10 +21,6 @@
 }
 - (IBAction)StrPnClick:(id)sender {
     self.strPn.selected = !self.strPn.isSelected;
-//    int pn = self.strPn.titleLabel.text.intValue + 1;
-//    NSInteger pn = [self.strPn.titleLabel.text integerValue];
-//    self.strPn.titleLabel.text = [NSString stringWithFormat:@"%ld",pn];
-
 }
 
 @end

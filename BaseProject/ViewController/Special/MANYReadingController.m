@@ -26,26 +26,15 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    UIImageView *topLogo = [[UIImageView alloc]init];
-    topLogo.contentMode = UIViewContentModeScaleAspectFit;
-    topLogo.image = [UIImage imageNamed:@"navLogo"];
-    topLogo.frame = CGRectMake(0, 0, 100, 18);
-    self.navigationItem.titleView = topLogo;
-    
+    self.navigationItem.titleView = [MANYTool addTopLogo];  
     UIBarButtonItem *button = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"shareBtn"] style:(UIBarButtonItemStyleDone) target:nil action:nil];
     self.navigationItem.rightBarButtonItem = button;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        [self.readingVM refreshDataCompletionHandle:^(NSError *error) {
-            [self.tableView reloadData];
-            [self.tableView.header endRefreshing];
-        }];
-    }];
-    [self.tableView.header beginRefreshing];
-
+    //配置初始界面
+    [MANYTool getInterFaceWithTableView:self.tableView usingViewModel:self.readingVM atSuperView:self.view];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -70,7 +59,7 @@
     self.cell.TitleLB.text = [self.readingVM getStrContTitle];
     self.cell.zuozheLB.text = [self.readingVM getStrContAuthor];
     self.cell.dazuozheLB.text = [self.readingVM getStrContAuthor];
-    self.cell.contentLB.text = [self.readingVM getStrContent];
+    self.cell.contentLB.text = [[self.readingVM getStrContent] stringByReplacingOccurrencesOfString:@"<br>" withString:@"\n"];
     self.cell.introduceLB.text = [self.readingVM getStrContAuthorIntroduce];
     [self.cell.pnButton setTitle:[self.readingVM getStrPraiseNumber] forState:(UIControlStateNormal)];
     self.cell.zuozheweiboLB.text = [self.readingVM getsWbN];

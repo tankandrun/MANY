@@ -13,7 +13,6 @@
 @interface MANYHomeController ()
 @property (nonatomic,strong)MANYHomeViewModel *homeVM;
 @property (nonatomic,strong)MANYHomeCell *cell;
-
 @end
 
 @implementation MANYHomeController
@@ -26,26 +25,15 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     //配置Navigation
-    UIImageView *topLogo = [[UIImageView alloc]init];
-    topLogo.contentMode = UIViewContentModeScaleAspectFit;
-    topLogo.image = [UIImage imageNamed:@"navLogo"];
-    topLogo.frame = CGRectMake(0, 0, 100, 18);
-    self.navigationItem.titleView = topLogo;
+    self.navigationItem.titleView = [MANYTool addTopLogo];
     UIBarButtonItem *button = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"shareBtn"] style:(UIBarButtonItemStyleDone) target:nil action:nil];
     self.navigationItem.rightBarButtonItem = button;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.showsVerticalScrollIndicator = NO;
-#warning 需要更改为左拉刷新
-    //刷新
-    self.tableView.header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
-        [self.homeVM refreshDataCompletionHandle:^(NSError *error) {
-            [self.tableView.header endRefreshing];
-            [self.tableView reloadData];
-        }];
-    }];
-    [self.tableView.header beginRefreshing];
+    //配置初始界面
+    [MANYTool getInterFaceWithTableView:self.tableView usingViewModel:self.homeVM atSuperView:self.view];
 }
 
 - (void)didReceiveMemoryWarning {

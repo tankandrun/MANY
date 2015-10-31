@@ -9,7 +9,7 @@
 #import "BaseViewModel.h"
 #import "MANYReadingModel.h"
 @interface MANYReadingViewModel : BaseViewModel
-//@property (nonatomic)NSInteger row;
+@property (nonatomic)NSInteger row;
 @property (nonatomic,strong)NSMutableArray *readingDataArr;
 
 - (MANYReadingContentModel *)getModel;

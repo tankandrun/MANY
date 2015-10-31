@@ -10,8 +10,13 @@
 #import "MANYNetManager.h"
 #import "MANYTool.h"
 @implementation MANYReadingViewModel
-static int row = 0;
-
+//static int row = 0;
+- (NSInteger)row {
+    if (!_row) {
+        _row = 0;
+    }
+    return _row;
+}
 - (NSMutableArray *)readingDataArr {
     if (!_readingDataArr) {
         _readingDataArr = [NSMutableArray new];
@@ -25,10 +30,10 @@ static int row = 0;
     return date;
 }
 - (MANYReadingContentModel *)getModel {
-    if (row == 0) {
+    if (_row == 0) {
         return nil;
     }else {
-        return self.readingDataArr[row-1];
+        return self.readingDataArr[_row-1];
     }
 }
 #pragma mark - 获得数据
@@ -59,24 +64,24 @@ static int row = 0;
 #pragma mark - 请求数据
 //获取更多
 - (void)getMoreDataCompletionHandle:(CompletionHandle)completionHandle {
-    if (row == 11) {
+    if (_row == 11) {
         NSError *error = [NSError errorWithDomain:@"" code:0 userInfo:nil];
         completionHandle(error);
     }else {
-        row += 1;
+        _row += 1;
         [self getDataFromNetCompleteHandle:completionHandle];
     }
 }
 //刷新
 - (void)refreshDataCompletionHandle:(CompletionHandle)completionHandle {
-    row = 1;
+    _row = 1;
     [self getDataFromNetCompleteHandle:completionHandle];
 }
 //获取数据
 - (void)getDataFromNetCompleteHandle:(CompletionHandle)completionHandle {
-    [MANYNetManager getReadingWithDate:[self getCurrentDate] row:(row) completionHandle:^(MANYReadingModel *model, NSError *error) {
+    [MANYNetManager getReadingWithDate:[self getCurrentDate] row:(_row) completionHandle:^(MANYReadingModel *model, NSError *error) {
         
-        if (row == 1) {
+        if (_row == 1) {
             [self.readingDataArr removeAllObjects];
         }
         

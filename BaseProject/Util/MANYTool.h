@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface MANYTool : NSObject
 /**
@@ -17,4 +18,17 @@
  *  获取MMMM dd, yyyy型的日期
  */
 + (NSString *)getBigDateFromString:(NSString *)dateStr;
+/**
+ *  显示界面
+ */
++ (void)getInterFaceWithTableView:(UITableView *)tableview usingViewModel:(id)viewModel atSuperView:(UIView *)superView;
+/**
+ *  添加TopLogo
+ */
++(UIView *)addTopLogo;
+/**
+ *  添加右上角Button
+ */
++(void)addButtonAtSuperView:(UIView *)superView;
+
 @end
