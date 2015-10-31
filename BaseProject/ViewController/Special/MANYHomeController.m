@@ -26,8 +26,7 @@
     [super viewDidAppear:animated];
     //配置Navigation
     self.navigationItem.titleView = [MANYTool addTopLogo];
-    UIBarButtonItem *button = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"shareBtn"] style:(UIBarButtonItemStyleDone) target:nil action:nil];
-    self.navigationItem.rightBarButtonItem = button;
+    self.navigationItem.rightBarButtonItem = [MANYTool addButton];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];

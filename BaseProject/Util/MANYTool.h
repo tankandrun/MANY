@@ -29,6 +29,6 @@
 /**
  *  添加右上角Button
  */
-+(void)addButtonAtSuperView:(UIView *)superView;
++(UIBarButtonItem *)addButton;
 
 @end

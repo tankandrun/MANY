@@ -25,10 +25,8 @@
 }
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
     self.navigationItem.titleView = [MANYTool addTopLogo];
-    UIBarButtonItem *button = [[UIBarButtonItem alloc]initWithImage:[UIImage imageNamed:@"shareBtn"] style:(UIBarButtonItemStyleDone) target:nil action:nil];
-    self.navigationItem.rightBarButtonItem = button;
+    self.navigationItem.rightBarButtonItem = [MANYTool addButton];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -75,7 +73,7 @@
     CGRect rectOfContent = CGRectMake(0, 0, kWindowW-20, 999);
     rectOfContent = [self.cell.strTcLB textRectForBounds:rectOfContent limitedToNumberOfLines:0];
     
-    return height+rectOfTitle.size.height*1.0+90+rectOfContent.size.height*1.0+40;
+    return height+rectOfTitle.size.height*1.0+80+rectOfContent.size.height*1.0;
 
 }
 

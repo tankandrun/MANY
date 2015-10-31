@@ -47,11 +47,13 @@
     topLogo.contentMode = UIViewContentModeScaleAspectFit;
     topLogo.image = [UIImage imageNamed:@"navLogo"];
     topLogo.frame = CGRectMake(0, 0, 100, 18);
-    
     return topLogo;
 }
 
-+(void)addButtonAtSuperView:(UIView *)superView {
-    
++(UIBarButtonItem *)addButton{
+    UIButton *shareButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 22, 22)];
+    [shareButton setImage:[UIImage imageNamed:@"shareBtn"] forState:(UIControlStateNormal)];
+    UIBarButtonItem *shareItem = [[UIBarButtonItem alloc]initWithCustomView:shareButton];
+    return shareItem;
 }
 @end

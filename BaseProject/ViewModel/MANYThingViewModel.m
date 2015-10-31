@@ -67,7 +67,7 @@
 }
 //获取数据
 - (void)getDataFromNetCompleteHandle:(CompletionHandle)completionHandle {
-    [MANYNetManager getThingWithDate:[self getCurrentDate] row:_row completionHandle:^(MANYThingModel *model, NSError *error) {
+    [MANYNetManager getThingWithDate:[self getCurrentDate] row:(_row) completionHandle:^(MANYThingModel *model, NSError *error) {
         if (_row == 1) {
             [self.thingDataArr removeAllObjects];
         }

@@ -9,6 +9,7 @@
 #import "MANYPersonalController.h"
 #import "MANYAboutController.h"
 #import "MANYSettingController.h"
+#import "MANYTool.h"
 @interface MANYPersonalController ()
 
 @end
@@ -16,13 +17,7 @@
 @implementation MANYPersonalController
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
-    UIImageView *topLogo = [[UIImageView alloc]init];
-    topLogo.contentMode = UIViewContentModeScaleAspectFit;
-    topLogo.image = [UIImage imageNamed:@"navLogo"];
-    topLogo.frame = CGRectMake(0, 0, 100, 18);
-    self.navigationItem.titleView = topLogo;
-    
+    self.navigationItem.titleView = [MANYTool addTopLogo];
 }
 kRemoveCellSeparator
 - (void)viewDidLoad {
