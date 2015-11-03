@@ -30,6 +30,8 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBar.nightBarTintColor = kRGBColor(0, 0, 0);
+    self.view.nightBackgroundColor = kRGBColor(40, 40, 40);
 
     //配置初始界面
     [MANYTool getInterFaceWithTableView:self.tableView usingViewModel:self.queVM atSuperView:self.view];

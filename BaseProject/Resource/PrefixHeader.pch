@@ -55,4 +55,7 @@ static const int ddLogLevel = DDLogLevelError;
 
 #import "NSObject+Common.h"
 
+//夜间模式
+#import "DKNightVersion.h"
+
 #endif /* PrefixHeader_pch */

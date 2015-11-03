@@ -26,7 +26,6 @@
 }
 
 + (void)getInterFaceWithTableView:(UITableView *)tableview usingViewModel:(id)viewModel atSuperView:(UIView *)superView {
-    
     UIImageView *cover = [[UIImageView alloc]init];
     cover.backgroundColor = [UIColor whiteColor];
     cover.frame = superView.frame;

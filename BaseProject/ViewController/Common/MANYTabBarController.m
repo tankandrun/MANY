@@ -18,6 +18,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     [[UITabBar appearance]setTintColor:myTintRGB];
+    [[UITabBar appearance]setNightBarTintColor:kRGBColor(48, 48, 48)];
     UITabBarItem *itemOne = [self.tabBar.items objectAtIndex:0];
     itemOne.image = [UIImage imageNamed:@"home"];
     itemOne.selectedImage = [UIImage imageNamed:@"homeSelected"];

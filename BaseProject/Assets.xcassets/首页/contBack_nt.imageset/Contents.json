@@ -5,6 +5,20 @@
       "scale" : "1x"
     },
     {
+      "resizing" : {
+        "mode" : "9-part",
+        "center" : {
+          "mode" : "tile",
+          "width" : 397,
+          "height" : 23
+        },
+        "cap-insets" : {
+          "bottom" : 7,
+          "top" : 29,
+          "right" : 6,
+          "left" : 15
+        }
+      },
       "idiom" : "universal",
       "filename" : "contBack_nt@2x.png",
       "scale" : "2x"

@@ -79,7 +79,7 @@
 }
 //获取数据
 - (void)getDataFromNetCompleteHandle:(CompletionHandle)completionHandle {
-    [MANYNetManager getReadingWithDate:[self getCurrentDate] row:(_row) completionHandle:^(MANYReadingModel *model, NSError *error) {
+    [MANYNetManager getReadingWithDate:[self getCurrentDate] row:(_row+0) completionHandle:^(MANYReadingModel *model, NSError *error) {
         
         if (_row == 1) {
             [self.readingDataArr removeAllObjects];

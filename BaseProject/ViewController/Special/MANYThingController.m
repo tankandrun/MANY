@@ -30,7 +30,9 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.navigationController.navigationBar.nightBarTintColor = kRGBColor(0, 0, 0);
+    self.view.nightBackgroundColor = kRGBColor(40, 40, 40);
+
     self.tableView.tableFooterView = [[UIView alloc]init];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
     self.tableView.showsVerticalScrollIndicator = NO;
@@ -74,7 +76,6 @@
     rectOfContent = [self.cell.strTcLB textRectForBounds:rectOfContent limitedToNumberOfLines:0];
     
     return height+rectOfTitle.size.height*1.0+80+rectOfContent.size.height*1.0;
-
 }
 
 

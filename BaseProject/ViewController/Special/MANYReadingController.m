@@ -27,12 +27,16 @@
     [super viewDidAppear:animated];
     self.navigationItem.titleView = [MANYTool addTopLogo];
     self.navigationItem.rightBarButtonItem = [MANYTool addButton];
+    
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.navigationController.navigationBar.nightBarTintColor = kRGBColor(0, 0, 0);
+    self.view.nightBackgroundColor = kRGBColor(40, 40, 40);
+
     //配置初始界面
     [MANYTool getInterFaceWithTableView:self.tableView usingViewModel:self.readingVM atSuperView:self.view];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -80,6 +84,7 @@
     rectOfZuozheIntroLB = [self.cell.zuozheIntroLB textRectForBounds:rectOfZuozheIntroLB limitedToNumberOfLines:0];
  
     height = height+rectOfContent.size.height*1.0+rectOfIntroduceLB.size.height*1.0+rectOfZuozheIntroLB.size.height*1.0+90+25+60+60;
+    NSLog(@"%f",height);
     return height;
 }
 

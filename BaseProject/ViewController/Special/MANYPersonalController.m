@@ -22,7 +22,9 @@
 kRemoveCellSeparator
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.navigationController.navigationBar.nightBarTintColor = kRGBColor(0, 0, 0);
+    self.view.nightBackgroundColor = kRGBColor(40, 40, 40);
+
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -50,13 +52,17 @@ kRemoveCellSeparator
     if (indexPath.row == 0) {
         cell.imageView.image = [UIImage imageNamed:@"p_notLogin"];
         cell.textLabel.text = @"立即登陆";
+        cell.textLabel.nightTextColor = kRGBColor(150, 150, 150);
     }else if (indexPath.row == 1) {
         cell.imageView.image = [UIImage imageNamed:@"setting"];
         cell.textLabel.text = @"设置";
+        cell.textLabel.nightTextColor = kRGBColor(150, 150, 150);
     }else {
         cell.imageView.image = [UIImage imageNamed:@"copyright"];
         cell.textLabel.text = @"关于";
+        cell.textLabel.nightTextColor = kRGBColor(150, 150, 150);
     }
+    
     return cell;
 }
 #pragma mark - UITableViewDelegate

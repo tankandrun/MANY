@@ -31,6 +31,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.showsVerticalScrollIndicator = NO;
+    self.navigationController.navigationBar.nightBarTintColor = kRGBColor(0, 0, 0);
+    self.view.nightBackgroundColor = kRGBColor(40, 40, 40);
+//    self.homeVM.row = 1;
     //配置初始界面
     [MANYTool getInterFaceWithTableView:self.tableView usingViewModel:self.homeVM atSuperView:self.view];
 }
@@ -39,7 +42,6 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 #pragma mark - Table view data source
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
@@ -51,11 +53,7 @@
     [self configureCell];
     return cell;
 }
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    return kWindowH-64-49;
-}
-//配置各个空间的内容
-
+//配置各个控件的内容
 - (void)configureCell {
     self.cell.strHpTitle.text = [self.homeVM getStrHpTitle];
     [self.cell.image setImageWithURL:[self.homeVM getThumbnailUrl]];
@@ -72,6 +70,11 @@
     self.cell.day.text = arr[0];
     self.cell.day.textColor = myTintRGB;
     self.cell.monthYear.text = [NSString stringWithFormat:@"%@",arr[1]];
+}
+
+#pragma mark - UITableViewDelegate
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
+    return kWindowH-64-49;
 }
 
 

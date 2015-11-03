@@ -9,19 +9,26 @@
 #import "MANYSettingController.h"
 
 @interface MANYSettingController ()<UITableViewDataSource,UITableViewDelegate>
-
+@property (nonatomic,strong)UITableView *tableView;
 @end
 
 @implementation MANYSettingController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.navigationController.navigationBar.nightBarTintColor = kRGBColor(0, 0, 0);
+//    self.view.nightBackgroundColor = kRGBColor(40, 40, 40);
+    
+
     UITableView *tableView = [[UITableView alloc]init];
     tableView.frame = self.view.frame;
     tableView.delegate = self;
     tableView.dataSource = self;
     [self.view addSubview:tableView];
     tableView.tableFooterView = nil;
+    tableView.nightBackgroundColor = kRGBColor(40, 40, 40);
+    tableView.tableHeaderView.nightBackgroundColor = kRGBColor(40, 40, 40);
+    self.tableView = tableView;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -55,6 +62,14 @@
         cell.textLabel.text = @"夜间模式切换";
         UISwitch *sw = [[UISwitch alloc]init];
         cell.accessoryView = sw;
+        [sw bk_addEventHandler:^(id sender) {
+            if ([DKNightVersionManager currentThemeVersion] == DKThemeVersionNight) {
+                [DKNightVersionManager dawnComing];
+            } else {
+                [DKNightVersionManager nightFalling];
+            }
+            [self.tableView reloadData];
+        } forControlEvents:(UIControlEventValueChanged)];
     }else if (indexPath.section == 1) {
         cell.textLabel.text = @"清除缓存";
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -77,6 +92,8 @@
 #warning 没有帐号登录时不显示
         cell.textLabel.text = @"退出当前账号";
     }
+//    cell.textLabel.nightTextColor = kRGBColor(150, 150, 150);
+//    cell.nightBackgroundColor = kRGBColor(20, 20, 20);
     return cell;
 }
 #pragma mark - UITableViewDelegate
