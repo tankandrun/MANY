@@ -9,6 +9,7 @@
 #import "MANYPersonalController.h"
 #import "MANYAboutController.h"
 #import "MANYSettingController.h"
+#import "MANYLogViewController.h"
 #import "MANYTool.h"
 @interface MANYPersonalController ()
 
@@ -70,7 +71,8 @@ kRemoveCellSeparator
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.row == 0) {
-        
+        MANYLogViewController *logVC = [[MANYLogViewController alloc]init];
+        [self.navigationController pushViewController:logVC animated:YES];
     }else if (indexPath.row == 1) {
         MANYSettingController *settingVC = [[MANYSettingController alloc]init];
         [self.navigationController pushViewController:settingVC animated:YES];

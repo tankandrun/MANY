@@ -8,6 +8,9 @@
 
 #import "MANYTool.h"
 #import "BaseViewModel.h"
+#import "UIView+TYAlertView.h"
+#import "TYAlertController+BlurEffects.h"
+#import "MANYShareView.h"
 @implementation MANYTool
 
 + (NSDate *)dateFromString:(NSString *)dateStr {
@@ -49,10 +52,16 @@
     return topLogo;
 }
 
-+(UIBarButtonItem *)addButton{
++(UIBarButtonItem *)addButtonAndTarget:(id)target{
     UIButton *shareButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 22, 22)];
     [shareButton setImage:[UIImage imageNamed:@"shareBtn"] forState:(UIControlStateNormal)];
     UIBarButtonItem *shareItem = [[UIBarButtonItem alloc]initWithCustomView:shareButton];
+    [shareButton bk_addEventHandler:^(id sender) {
+        MANYShareView *shareView = [MANYShareView createViewFromNib];
+        TYAlertController *alertController = [TYAlertController alertControllerWithAlertView:shareView preferredStyle:(TYAlertControllerStyleActionSheet)];
+        alertController.backgoundTapDismissEnable = YES;
+        [target presentViewController:alertController animated:YES completion:nil];
+    } forControlEvents:(UIControlEventTouchUpInside)];
     return shareItem;
 }
 @end

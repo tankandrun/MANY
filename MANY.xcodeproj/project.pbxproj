@@ -8,62 +8,77 @@
 
 /* Begin PBXBuildFile section */
 		1FACF87C97D68F953ECE365C /* libPods-BaseProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EAAD623A23724C816F8DC02 /* libPods-BaseProject.a */; };
-		3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804CE4A1BD758F10046C8C8 /* AppDelegate+Category.m */; settings = {ASSET_TAGS = (); }; };
-		3804CE521BD758F10046C8C8 /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804CE4C1BD758F10046C8C8 /* NSObject+Common.m */; settings = {ASSET_TAGS = (); }; };
-		3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804CE4E1BD758F10046C8C8 /* NSString+PJR.m */; settings = {ASSET_TAGS = (); }; };
-		3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804CE501BD758F10046C8C8 /* NSString+QRCode.m */; settings = {ASSET_TAGS = (); }; };
+		3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804CE4A1BD758F10046C8C8 /* AppDelegate+Category.m */; };
+		3804CE521BD758F10046C8C8 /* NSObject+Common.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804CE4C1BD758F10046C8C8 /* NSObject+Common.m */; };
+		3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804CE4E1BD758F10046C8C8 /* NSString+PJR.m */; };
+		3804CE541BD758F10046C8C8 /* NSString+QRCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 3804CE501BD758F10046C8C8 /* NSString+QRCode.m */; };
 		3886C0981BD748830014E661 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0971BD748830014E661 /* main.m */; };
 		3886C09B1BD748830014E661 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C09A1BD748830014E661 /* AppDelegate.m */; };
 		3886C0A11BD748830014E661 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3886C09F1BD748830014E661 /* Main.storyboard */; };
 		3886C0A31BD748830014E661 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3886C0A21BD748830014E661 /* Assets.xcassets */; };
-		3886C0AE1BD749A00014E661 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3886C0AD1BD749A00014E661 /* LaunchScreen.xib */; settings = {ASSET_TAGS = (); }; };
-		3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0BA1BD74AE90014E661 /* BaseViewModel.m */; settings = {ASSET_TAGS = (); }; };
-		3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */; settings = {ASSET_TAGS = (); }; };
-		3886C0C11BD74B090014E661 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0C01BD74B090014E661 /* BaseModel.m */; settings = {ASSET_TAGS = (); }; };
-		4E0088331BE3809A0084051B /* MANYQueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0088321BE3809A0084051B /* MANYQueCell.m */; settings = {ASSET_TAGS = (); }; };
-		4E0088361BE382A70084051B /* MANYQueViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0088351BE382A70084051B /* MANYQueViewModel.m */; settings = {ASSET_TAGS = (); }; };
-		4E0088391BE390600084051B /* MANYThingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0088381BE390600084051B /* MANYThingCell.m */; settings = {ASSET_TAGS = (); }; };
-		4E00883C1BE392E10084051B /* MANYThingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E00883B1BE392E10084051B /* MANYThingViewModel.m */; settings = {ASSET_TAGS = (); }; };
-		4E0088401BE3AB1F0084051B /* MANYAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E00883F1BE3AB1F0084051B /* MANYAboutController.m */; settings = {ASSET_TAGS = (); }; };
-		4E0088461BE3B2370084051B /* MANYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0088451BE3B2370084051B /* MANYSettingController.m */; settings = {ASSET_TAGS = (); }; };
-		4E0EEE191BE499EB001F3173 /* ScrollDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EEE181BE499EB001F3173 /* ScrollDisplayViewController.m */; settings = {ASSET_TAGS = (); }; };
-		4E1142D71BDE39C1001987DA /* MANYReadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142D61BDE39C1001987DA /* MANYReadingController.m */; settings = {ASSET_TAGS = (); }; };
-		4E1142DA1BDE443E001987DA /* MANYQueController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142D91BDE443E001987DA /* MANYQueController.m */; settings = {ASSET_TAGS = (); }; };
-		4E1142DD1BDE50BC001987DA /* MANYThingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142DC1BDE50BC001987DA /* MANYThingController.m */; settings = {ASSET_TAGS = (); }; };
-		4E1142E01BDE559E001987DA /* MANYPersonalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142DF1BDE559E001987DA /* MANYPersonalController.m */; settings = {ASSET_TAGS = (); }; };
-		4E1142E91BDE6254001987DA /* MANYHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142E81BDE6254001987DA /* MANYHomeModel.m */; settings = {ASSET_TAGS = (); }; };
-		4E1142EC1BDE6376001987DA /* MANYReadingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142EB1BDE6376001987DA /* MANYReadingModel.m */; settings = {ASSET_TAGS = (); }; };
-		4E1142EF1BDE64C2001987DA /* MANYQueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142EE1BDE64C2001987DA /* MANYQueModel.m */; settings = {ASSET_TAGS = (); }; };
-		4E1142F21BDE6619001987DA /* MANYThingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142F11BDE6619001987DA /* MANYThingModel.m */; settings = {ASSET_TAGS = (); }; };
-		4E1142F81BDE6ABE001987DA /* MANYNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142F71BDE6ABE001987DA /* MANYNetManager.m */; settings = {ASSET_TAGS = (); }; };
-		4E1143011BDE6FE3001987DA /* MANYAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142FF1BDE6FE3001987DA /* MANYAdModel.m */; settings = {ASSET_TAGS = (); }; };
-		4E1FE2831BDDCD46009550FB /* MANYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1FE2821BDDCD46009550FB /* MANYTabBarController.m */; settings = {ASSET_TAGS = (); }; };
-		4E1FE2AA1BDE3440009550FB /* IMG_1420.JPG in Resources */ = {isa = PBXBuildFile; fileRef = 4E1FE2A91BDE3440009550FB /* IMG_1420.JPG */; settings = {ASSET_TAGS = (); }; };
-		4E3AF2551BDF12E900FFA1B0 /* MANYHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AF2541BDF12E900FFA1B0 /* MANYHomeController.m */; settings = {ASSET_TAGS = (); }; };
-		4E3AF2581BDF13FF00FFA1B0 /* MANYHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AF2571BDF13FF00FFA1B0 /* MANYHomeViewModel.m */; settings = {ASSET_TAGS = (); }; };
-		4E3AF25B1BDF147200FFA1B0 /* MANYHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AF25A1BDF147200FFA1B0 /* MANYHomeCell.m */; settings = {ASSET_TAGS = (); }; };
-		4EE0C1891BE79FCA00CFDD33 /* UIViewController+ChangeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1591BE79FC900CFDD33 /* UIViewController+ChangeColor.m */; settings = {ASSET_TAGS = (); }; };
-		4EE0C18A1BE79FCA00CFDD33 /* DKNightVersionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C15C1BE79FC900CFDD33 /* DKNightVersionManager.m */; settings = {ASSET_TAGS = (); }; };
-		4EE0C18B1BE79FCA00CFDD33 /* DKNightVersionUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1601BE79FC900CFDD33 /* DKNightVersionUtility.m */; settings = {ASSET_TAGS = (); }; };
-		4EE0C18C1BE79FCA00CFDD33 /* UIImageView+NightImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1621BE79FC900CFDD33 /* UIImageView+NightImage.m */; settings = {ASSET_TAGS = (); }; };
-		4EE0C18D1BE79FCA00CFDD33 /* UINavigationBar+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1641BE79FC900CFDD33 /* UINavigationBar+Animation.m */; settings = {ASSET_TAGS = (); }; };
-		4EE0C18E1BE79FCA00CFDD33 /* UIBarButtonItem+NightVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1681BE79FC900CFDD33 /* UIBarButtonItem+NightVersion.m */; settings = {ASSET_TAGS = (); }; };
-		4EE0C18F1BE79FCA00CFDD33 /* UIBarButtonItem+TintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C16A1BE79FC900CFDD33 /* UIBarButtonItem+TintColor.m */; settings = {ASSET_TAGS = (); }; };
-		4EE0C1901BE79FCA00CFDD33 /* UIButton+NightVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C16D1BE79FC900CFDD33 /* UIButton+NightVersion.m */; settings = {ASSET_TAGS = (); }; };
-		4EE0C1911BE79FCA00CFDD33 /* UIButton+TitleColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C16F1BE79FCA00CFDD33 /* UIButton+TitleColor.m */; settings = {ASSET_TAGS = (); }; };
-		4EE0C1921BE79FCA00CFDD33 /* UILabel+NightVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1721BE79FCA00CFDD33 /* UILabel+NightVersion.m */; settings = {ASSET_TAGS = (); }; };
-		4EE0C1931BE79FCA00CFDD33 /* UILabel+TextColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1741BE79FCA00CFDD33 /* UILabel+TextColor.m */; settings = {ASSET_TAGS = (); }; };
-		4EE0C1941BE79FCA00CFDD33 /* UINavigationBar+NightVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1771BE79FCA00CFDD33 /* UINavigationBar+NightVersion.m */; settings = {ASSET_TAGS = (); }; };
-		4EE0C1951BE79FCA00CFDD33 /* UINavigationBar+TintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1791BE79FCA00CFDD33 /* UINavigationBar+TintColor.m */; settings = {ASSET_TAGS = (); }; };
-		4EE0C1961BE79FCA00CFDD33 /* UITabBar+BarTintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C17C1BE79FCA00CFDD33 /* UITabBar+BarTintColor.m */; settings = {ASSET_TAGS = (); }; };
-		4EE0C1971BE79FCA00CFDD33 /* UITabBar+NightVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C17E1BE79FCA00CFDD33 /* UITabBar+NightVersion.m */; settings = {ASSET_TAGS = (); }; };
-		4EE0C1981BE79FCA00CFDD33 /* UITableView+NightVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1811BE79FCA00CFDD33 /* UITableView+NightVersion.m */; settings = {ASSET_TAGS = (); }; };
-		4EE0C1991BE79FCA00CFDD33 /* UITableView+SeparatorColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1831BE79FCA00CFDD33 /* UITableView+SeparatorColor.m */; settings = {ASSET_TAGS = (); }; };
-		4EE0C19A1BE79FCA00CFDD33 /* UIView+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1861BE79FCA00CFDD33 /* UIView+BackgroundColor.m */; settings = {ASSET_TAGS = (); }; };
-		4EE0C19B1BE79FCA00CFDD33 /* UIView+NightVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1881BE79FCA00CFDD33 /* UIView+NightVersion.m */; settings = {ASSET_TAGS = (); }; };
-		4EF7DF561BDFAFB900BA2744 /* MANYReadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7DF551BDFAFB900BA2744 /* MANYReadingCell.m */; settings = {ASSET_TAGS = (); }; };
-		4EF7DF591BDFB1A000BA2744 /* MANYReadingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7DF581BDFB1A000BA2744 /* MANYReadingViewModel.m */; settings = {ASSET_TAGS = (); }; };
-		4EF7DF5C1BDFB69C00BA2744 /* MANYTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7DF5B1BDFB69C00BA2744 /* MANYTool.m */; settings = {ASSET_TAGS = (); }; };
+		3886C0AE1BD749A00014E661 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3886C0AD1BD749A00014E661 /* LaunchScreen.xib */; };
+		3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0BA1BD74AE90014E661 /* BaseViewModel.m */; };
+		3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0BD1BD74AFE0014E661 /* BaseNetManager.m */; };
+		3886C0C11BD74B090014E661 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3886C0C01BD74B090014E661 /* BaseModel.m */; };
+		4E0088331BE3809A0084051B /* MANYQueCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0088321BE3809A0084051B /* MANYQueCell.m */; };
+		4E0088361BE382A70084051B /* MANYQueViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0088351BE382A70084051B /* MANYQueViewModel.m */; };
+		4E0088391BE390600084051B /* MANYThingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0088381BE390600084051B /* MANYThingCell.m */; };
+		4E00883C1BE392E10084051B /* MANYThingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E00883B1BE392E10084051B /* MANYThingViewModel.m */; };
+		4E0088401BE3AB1F0084051B /* MANYAboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E00883F1BE3AB1F0084051B /* MANYAboutController.m */; };
+		4E0088461BE3B2370084051B /* MANYSettingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0088451BE3B2370084051B /* MANYSettingController.m */; };
+		4E084AEF1BE8CAE40030A4B0 /* MANYLogViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E084AED1BE8CAE40030A4B0 /* MANYLogViewController.m */; };
+		4E084AF01BE8CAE40030A4B0 /* MANYLogViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4E084AEE1BE8CAE40030A4B0 /* MANYLogViewController.xib */; };
+		4E084B0A1BE8DE840030A4B0 /* TYAlertController+TransitionAnimate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E084AF71BE8DE840030A4B0 /* TYAlertController+TransitionAnimate.m */; };
+		4E084B0B1BE8DE840030A4B0 /* TYAlertController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E084AF91BE8DE840030A4B0 /* TYAlertController.m */; };
+		4E084B0C1BE8DE840030A4B0 /* TYAlertDropDownAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E084AFB1BE8DE840030A4B0 /* TYAlertDropDownAnimation.m */; };
+		4E084B0D1BE8DE840030A4B0 /* TYAlertFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E084AFD1BE8DE840030A4B0 /* TYAlertFadeAnimation.m */; };
+		4E084B0E1BE8DE840030A4B0 /* TYAlertScaleFadeAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E084AFF1BE8DE840030A4B0 /* TYAlertScaleFadeAnimation.m */; };
+		4E084B0F1BE8DE840030A4B0 /* TYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E084B011BE8DE840030A4B0 /* TYAlertView.m */; };
+		4E084B101BE8DE840030A4B0 /* TYBaseAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E084B031BE8DE840030A4B0 /* TYBaseAnimation.m */; };
+		4E084B111BE8DE840030A4B0 /* TYShowAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E084B051BE8DE840030A4B0 /* TYShowAlertView.m */; };
+		4E084B121BE8DE840030A4B0 /* UIView+TYAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E084B071BE8DE840030A4B0 /* UIView+TYAlertView.m */; };
+		4E084B131BE8DE840030A4B0 /* UIView+TYAutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E084B091BE8DE840030A4B0 /* UIView+TYAutoLayout.m */; };
+		4E084B191BE8DE930030A4B0 /* TYAlertController+BlurEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E084B161BE8DE930030A4B0 /* TYAlertController+BlurEffects.m */; };
+		4E084B1A1BE8DE930030A4B0 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E084B181BE8DE930030A4B0 /* UIImage+ImageEffects.m */; };
+		4E0EEE191BE499EB001F3173 /* ScrollDisplayViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E0EEE181BE499EB001F3173 /* ScrollDisplayViewController.m */; };
+		4E1142D71BDE39C1001987DA /* MANYReadingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142D61BDE39C1001987DA /* MANYReadingController.m */; };
+		4E1142DA1BDE443E001987DA /* MANYQueController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142D91BDE443E001987DA /* MANYQueController.m */; };
+		4E1142DD1BDE50BC001987DA /* MANYThingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142DC1BDE50BC001987DA /* MANYThingController.m */; };
+		4E1142E01BDE559E001987DA /* MANYPersonalController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142DF1BDE559E001987DA /* MANYPersonalController.m */; };
+		4E1142E91BDE6254001987DA /* MANYHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142E81BDE6254001987DA /* MANYHomeModel.m */; };
+		4E1142EC1BDE6376001987DA /* MANYReadingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142EB1BDE6376001987DA /* MANYReadingModel.m */; };
+		4E1142EF1BDE64C2001987DA /* MANYQueModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142EE1BDE64C2001987DA /* MANYQueModel.m */; };
+		4E1142F21BDE6619001987DA /* MANYThingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142F11BDE6619001987DA /* MANYThingModel.m */; };
+		4E1142F81BDE6ABE001987DA /* MANYNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142F71BDE6ABE001987DA /* MANYNetManager.m */; };
+		4E1143011BDE6FE3001987DA /* MANYAdModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1142FF1BDE6FE3001987DA /* MANYAdModel.m */; };
+		4E1FE2831BDDCD46009550FB /* MANYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E1FE2821BDDCD46009550FB /* MANYTabBarController.m */; };
+		4E3AF2551BDF12E900FFA1B0 /* MANYHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AF2541BDF12E900FFA1B0 /* MANYHomeController.m */; };
+		4E3AF2581BDF13FF00FFA1B0 /* MANYHomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AF2571BDF13FF00FFA1B0 /* MANYHomeViewModel.m */; };
+		4E3AF25B1BDF147200FFA1B0 /* MANYHomeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4E3AF25A1BDF147200FFA1B0 /* MANYHomeCell.m */; };
+		4EE0C1891BE79FCA00CFDD33 /* UIViewController+ChangeColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1591BE79FC900CFDD33 /* UIViewController+ChangeColor.m */; };
+		4EE0C18A1BE79FCA00CFDD33 /* DKNightVersionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C15C1BE79FC900CFDD33 /* DKNightVersionManager.m */; };
+		4EE0C18B1BE79FCA00CFDD33 /* DKNightVersionUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1601BE79FC900CFDD33 /* DKNightVersionUtility.m */; };
+		4EE0C18C1BE79FCA00CFDD33 /* UIImageView+NightImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1621BE79FC900CFDD33 /* UIImageView+NightImage.m */; };
+		4EE0C18D1BE79FCA00CFDD33 /* UINavigationBar+Animation.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1641BE79FC900CFDD33 /* UINavigationBar+Animation.m */; };
+		4EE0C18E1BE79FCA00CFDD33 /* UIBarButtonItem+NightVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1681BE79FC900CFDD33 /* UIBarButtonItem+NightVersion.m */; };
+		4EE0C18F1BE79FCA00CFDD33 /* UIBarButtonItem+TintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C16A1BE79FC900CFDD33 /* UIBarButtonItem+TintColor.m */; };
+		4EE0C1901BE79FCA00CFDD33 /* UIButton+NightVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C16D1BE79FC900CFDD33 /* UIButton+NightVersion.m */; };
+		4EE0C1911BE79FCA00CFDD33 /* UIButton+TitleColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C16F1BE79FCA00CFDD33 /* UIButton+TitleColor.m */; };
+		4EE0C1921BE79FCA00CFDD33 /* UILabel+NightVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1721BE79FCA00CFDD33 /* UILabel+NightVersion.m */; };
+		4EE0C1931BE79FCA00CFDD33 /* UILabel+TextColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1741BE79FCA00CFDD33 /* UILabel+TextColor.m */; };
+		4EE0C1941BE79FCA00CFDD33 /* UINavigationBar+NightVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1771BE79FCA00CFDD33 /* UINavigationBar+NightVersion.m */; };
+		4EE0C1951BE79FCA00CFDD33 /* UINavigationBar+TintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1791BE79FCA00CFDD33 /* UINavigationBar+TintColor.m */; };
+		4EE0C1961BE79FCA00CFDD33 /* UITabBar+BarTintColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C17C1BE79FCA00CFDD33 /* UITabBar+BarTintColor.m */; };
+		4EE0C1971BE79FCA00CFDD33 /* UITabBar+NightVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C17E1BE79FCA00CFDD33 /* UITabBar+NightVersion.m */; };
+		4EE0C1981BE79FCA00CFDD33 /* UITableView+NightVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1811BE79FCA00CFDD33 /* UITableView+NightVersion.m */; };
+		4EE0C1991BE79FCA00CFDD33 /* UITableView+SeparatorColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1831BE79FCA00CFDD33 /* UITableView+SeparatorColor.m */; };
+		4EE0C19A1BE79FCA00CFDD33 /* UIView+BackgroundColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1861BE79FCA00CFDD33 /* UIView+BackgroundColor.m */; };
+		4EE0C19B1BE79FCA00CFDD33 /* UIView+NightVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EE0C1881BE79FCA00CFDD33 /* UIView+NightVersion.m */; };
+		4EF7DF561BDFAFB900BA2744 /* MANYReadingCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7DF551BDFAFB900BA2744 /* MANYReadingCell.m */; };
+		4EF7DF591BDFB1A000BA2744 /* MANYReadingViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7DF581BDFB1A000BA2744 /* MANYReadingViewModel.m */; };
+		4EF7DF5C1BDFB69C00BA2744 /* MANYTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 4EF7DF5B1BDFB69C00BA2744 /* MANYTool.m */; };
+		A9253B5B1BE8F5B100BE5556 /* MANYShareView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A9253B591BE8F5B100BE5556 /* MANYShareView.xib */; };
+		A9253B5E1BE8F63C00BE5556 /* MANYShareView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9253B5D1BE8F63C00BE5556 /* MANYShareView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -104,6 +119,32 @@
 		4E00883F1BE3AB1F0084051B /* MANYAboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYAboutController.m; sourceTree = "<group>"; };
 		4E0088441BE3B2370084051B /* MANYSettingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYSettingController.h; sourceTree = "<group>"; };
 		4E0088451BE3B2370084051B /* MANYSettingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYSettingController.m; sourceTree = "<group>"; };
+		4E084AEC1BE8CAE40030A4B0 /* MANYLogViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYLogViewController.h; sourceTree = "<group>"; };
+		4E084AED1BE8CAE40030A4B0 /* MANYLogViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYLogViewController.m; sourceTree = "<group>"; };
+		4E084AEE1BE8CAE40030A4B0 /* MANYLogViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MANYLogViewController.xib; sourceTree = "<group>"; };
+		4E084AF71BE8DE840030A4B0 /* TYAlertController+TransitionAnimate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TYAlertController+TransitionAnimate.m"; sourceTree = "<group>"; };
+		4E084AF81BE8DE840030A4B0 /* TYAlertController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertController.h; sourceTree = "<group>"; };
+		4E084AF91BE8DE840030A4B0 /* TYAlertController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertController.m; sourceTree = "<group>"; };
+		4E084AFA1BE8DE840030A4B0 /* TYAlertDropDownAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertDropDownAnimation.h; sourceTree = "<group>"; };
+		4E084AFB1BE8DE840030A4B0 /* TYAlertDropDownAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertDropDownAnimation.m; sourceTree = "<group>"; };
+		4E084AFC1BE8DE840030A4B0 /* TYAlertFadeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertFadeAnimation.h; sourceTree = "<group>"; };
+		4E084AFD1BE8DE840030A4B0 /* TYAlertFadeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertFadeAnimation.m; sourceTree = "<group>"; };
+		4E084AFE1BE8DE840030A4B0 /* TYAlertScaleFadeAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertScaleFadeAnimation.h; sourceTree = "<group>"; };
+		4E084AFF1BE8DE840030A4B0 /* TYAlertScaleFadeAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertScaleFadeAnimation.m; sourceTree = "<group>"; };
+		4E084B001BE8DE840030A4B0 /* TYAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYAlertView.h; sourceTree = "<group>"; };
+		4E084B011BE8DE840030A4B0 /* TYAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYAlertView.m; sourceTree = "<group>"; };
+		4E084B021BE8DE840030A4B0 /* TYBaseAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYBaseAnimation.h; sourceTree = "<group>"; };
+		4E084B031BE8DE840030A4B0 /* TYBaseAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYBaseAnimation.m; sourceTree = "<group>"; };
+		4E084B041BE8DE840030A4B0 /* TYShowAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TYShowAlertView.h; sourceTree = "<group>"; };
+		4E084B051BE8DE840030A4B0 /* TYShowAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TYShowAlertView.m; sourceTree = "<group>"; };
+		4E084B061BE8DE840030A4B0 /* UIView+TYAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TYAlertView.h"; sourceTree = "<group>"; };
+		4E084B071BE8DE840030A4B0 /* UIView+TYAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TYAlertView.m"; sourceTree = "<group>"; };
+		4E084B081BE8DE840030A4B0 /* UIView+TYAutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+TYAutoLayout.h"; sourceTree = "<group>"; };
+		4E084B091BE8DE840030A4B0 /* UIView+TYAutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+TYAutoLayout.m"; sourceTree = "<group>"; };
+		4E084B151BE8DE930030A4B0 /* TYAlertController+BlurEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TYAlertController+BlurEffects.h"; sourceTree = "<group>"; };
+		4E084B161BE8DE930030A4B0 /* TYAlertController+BlurEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "TYAlertController+BlurEffects.m"; sourceTree = "<group>"; };
+		4E084B171BE8DE930030A4B0 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		4E084B181BE8DE930030A4B0 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		4E0EEE171BE499EB001F3173 /* ScrollDisplayViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollDisplayViewController.h; sourceTree = "<group>"; };
 		4E0EEE181BE499EB001F3173 /* ScrollDisplayViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ScrollDisplayViewController.m; sourceTree = "<group>"; };
 		4E1142D51BDE39C1001987DA /* MANYReadingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYReadingController.h; sourceTree = "<group>"; };
@@ -128,7 +169,6 @@
 		4E1143001BDE6FE3001987DA /* MANYAdModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYAdModel.h; sourceTree = "<group>"; };
 		4E1FE2811BDDCD46009550FB /* MANYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYTabBarController.h; sourceTree = "<group>"; };
 		4E1FE2821BDDCD46009550FB /* MANYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYTabBarController.m; sourceTree = "<group>"; };
-		4E1FE2A91BDE3440009550FB /* IMG_1420.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = IMG_1420.JPG; path = ViewModel/IMG_1420.JPG; sourceTree = "<group>"; };
 		4E3AF2531BDF12E900FFA1B0 /* MANYHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYHomeController.h; sourceTree = "<group>"; };
 		4E3AF2541BDF12E900FFA1B0 /* MANYHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYHomeController.m; sourceTree = "<group>"; };
 		4E3AF2561BDF13FF00FFA1B0 /* MANYHomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYHomeViewModel.h; sourceTree = "<group>"; };
@@ -181,6 +221,9 @@
 		4EF7DF5A1BDFB69C00BA2744 /* MANYTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYTool.h; sourceTree = "<group>"; };
 		4EF7DF5B1BDFB69C00BA2744 /* MANYTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYTool.m; sourceTree = "<group>"; };
 		5EAAD623A23724C816F8DC02 /* libPods-BaseProject.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BaseProject.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A9253B591BE8F5B100BE5556 /* MANYShareView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MANYShareView.xib; sourceTree = "<group>"; };
+		A9253B5C1BE8F63C00BE5556 /* MANYShareView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MANYShareView.h; sourceTree = "<group>"; };
+		A9253B5D1BE8F63C00BE5556 /* MANYShareView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MANYShareView.m; sourceTree = "<group>"; };
 		DD4F0750B5DAAA87BA236B31 /* Pods-BaseProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BaseProject.release.xcconfig"; path = "Pods/Target Support Files/Pods-BaseProject/Pods-BaseProject.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -243,7 +286,6 @@
 				3886C0B71BD74A4A0014E661 /* ViewModel */,
 				3886C0991BD748830014E661 /* AppDelegate.h */,
 				3886C09A1BD748830014E661 /* AppDelegate.m */,
-				4E1FE2A91BDE3440009550FB /* IMG_1420.JPG */,
 				3886C0961BD748830014E661 /* Supporting Files */,
 			);
 			path = BaseProject;
@@ -321,6 +363,8 @@
 		3886C0B41BD74A4A0014E661 /* Vendor */ = {
 			isa = PBXGroup;
 			children = (
+				4E084B141BE8DE930030A4B0 /* Blur Effects */,
+				4E084AF61BE8DE840030A4B0 /* TYAlertController */,
 				4EE0C1561BE79FC900CFDD33 /* DKNightVersion */,
 			);
 			path = Vendor;
@@ -337,6 +381,9 @@
 				4E0088321BE3809A0084051B /* MANYQueCell.m */,
 				4E0088371BE390600084051B /* MANYThingCell.h */,
 				4E0088381BE390600084051B /* MANYThingCell.m */,
+				A9253B5C1BE8F63C00BE5556 /* MANYShareView.h */,
+				A9253B5D1BE8F63C00BE5556 /* MANYShareView.m */,
+				A9253B591BE8F5B100BE5556 /* MANYShareView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -374,8 +421,48 @@
 				4E00883F1BE3AB1F0084051B /* MANYAboutController.m */,
 				4E0088441BE3B2370084051B /* MANYSettingController.h */,
 				4E0088451BE3B2370084051B /* MANYSettingController.m */,
+				4E084AEC1BE8CAE40030A4B0 /* MANYLogViewController.h */,
+				4E084AED1BE8CAE40030A4B0 /* MANYLogViewController.m */,
+				4E084AEE1BE8CAE40030A4B0 /* MANYLogViewController.xib */,
 			);
 			name = MoreFromPersonal;
+			sourceTree = "<group>";
+		};
+		4E084AF61BE8DE840030A4B0 /* TYAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				4E084AF71BE8DE840030A4B0 /* TYAlertController+TransitionAnimate.m */,
+				4E084AF81BE8DE840030A4B0 /* TYAlertController.h */,
+				4E084AF91BE8DE840030A4B0 /* TYAlertController.m */,
+				4E084AFA1BE8DE840030A4B0 /* TYAlertDropDownAnimation.h */,
+				4E084AFB1BE8DE840030A4B0 /* TYAlertDropDownAnimation.m */,
+				4E084AFC1BE8DE840030A4B0 /* TYAlertFadeAnimation.h */,
+				4E084AFD1BE8DE840030A4B0 /* TYAlertFadeAnimation.m */,
+				4E084AFE1BE8DE840030A4B0 /* TYAlertScaleFadeAnimation.h */,
+				4E084AFF1BE8DE840030A4B0 /* TYAlertScaleFadeAnimation.m */,
+				4E084B001BE8DE840030A4B0 /* TYAlertView.h */,
+				4E084B011BE8DE840030A4B0 /* TYAlertView.m */,
+				4E084B021BE8DE840030A4B0 /* TYBaseAnimation.h */,
+				4E084B031BE8DE840030A4B0 /* TYBaseAnimation.m */,
+				4E084B041BE8DE840030A4B0 /* TYShowAlertView.h */,
+				4E084B051BE8DE840030A4B0 /* TYShowAlertView.m */,
+				4E084B061BE8DE840030A4B0 /* UIView+TYAlertView.h */,
+				4E084B071BE8DE840030A4B0 /* UIView+TYAlertView.m */,
+				4E084B081BE8DE840030A4B0 /* UIView+TYAutoLayout.h */,
+				4E084B091BE8DE840030A4B0 /* UIView+TYAutoLayout.m */,
+			);
+			path = TYAlertController;
+			sourceTree = "<group>";
+		};
+		4E084B141BE8DE930030A4B0 /* Blur Effects */ = {
+			isa = PBXGroup;
+			children = (
+				4E084B151BE8DE930030A4B0 /* TYAlertController+BlurEffects.h */,
+				4E084B161BE8DE930030A4B0 /* TYAlertController+BlurEffects.m */,
+				4E084B171BE8DE930030A4B0 /* UIImage+ImageEffects.h */,
+				4E084B181BE8DE930030A4B0 /* UIImage+ImageEffects.m */,
+			);
+			path = "Blur Effects";
 			sourceTree = "<group>";
 		};
 		4E0EEE161BE499EB001F3173 /* ScrollDisplay */ = {
@@ -627,10 +714,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E084AF01BE8CAE40030A4B0 /* MANYLogViewController.xib in Resources */,
 				3886C0A31BD748830014E661 /* Assets.xcassets in Resources */,
 				3886C0AE1BD749A00014E661 /* LaunchScreen.xib in Resources */,
-				4E1FE2AA1BDE3440009550FB /* IMG_1420.JPG in Resources */,
 				3886C0A11BD748830014E661 /* Main.storyboard in Resources */,
+				A9253B5B1BE8F5B100BE5556 /* MANYShareView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,6 +777,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4E084B101BE8DE840030A4B0 /* TYBaseAnimation.m in Sources */,
 				4EE0C1901BE79FCA00CFDD33 /* UIButton+NightVersion.m in Sources */,
 				4E0088331BE3809A0084051B /* MANYQueCell.m in Sources */,
 				4EE0C1961BE79FCA00CFDD33 /* UITabBar+BarTintColor.m in Sources */,
@@ -696,6 +785,7 @@
 				4EE0C19A1BE79FCA00CFDD33 /* UIView+BackgroundColor.m in Sources */,
 				4EE0C1891BE79FCA00CFDD33 /* UIViewController+ChangeColor.m in Sources */,
 				3886C0BE1BD74AFE0014E661 /* BaseNetManager.m in Sources */,
+				4E084B0C1BE8DE840030A4B0 /* TYAlertDropDownAnimation.m in Sources */,
 				4E1142DD1BDE50BC001987DA /* MANYThingController.m in Sources */,
 				4EE0C1971BE79FCA00CFDD33 /* UITabBar+NightVersion.m in Sources */,
 				4E0EEE191BE499EB001F3173 /* ScrollDisplayViewController.m in Sources */,
@@ -711,15 +801,25 @@
 				4E1142DA1BDE443E001987DA /* MANYQueController.m in Sources */,
 				4EE0C18F1BE79FCA00CFDD33 /* UIBarButtonItem+TintColor.m in Sources */,
 				4E0088401BE3AB1F0084051B /* MANYAboutController.m in Sources */,
+				4E084B131BE8DE840030A4B0 /* UIView+TYAutoLayout.m in Sources */,
 				4EE0C18C1BE79FCA00CFDD33 /* UIImageView+NightImage.m in Sources */,
+				4E084B1A1BE8DE930030A4B0 /* UIImage+ImageEffects.m in Sources */,
+				4E084B121BE8DE840030A4B0 /* UIView+TYAlertView.m in Sources */,
+				4E084AEF1BE8CAE40030A4B0 /* MANYLogViewController.m in Sources */,
 				4EF7DF5C1BDFB69C00BA2744 /* MANYTool.m in Sources */,
 				3804CE531BD758F10046C8C8 /* NSString+PJR.m in Sources */,
 				4E00883C1BE392E10084051B /* MANYThingViewModel.m in Sources */,
 				3886C09B1BD748830014E661 /* AppDelegate.m in Sources */,
+				4E084B0A1BE8DE840030A4B0 /* TYAlertController+TransitionAnimate.m in Sources */,
 				3804CE511BD758F10046C8C8 /* AppDelegate+Category.m in Sources */,
 				4EE0C19B1BE79FCA00CFDD33 /* UIView+NightVersion.m in Sources */,
+				4E084B111BE8DE840030A4B0 /* TYShowAlertView.m in Sources */,
+				4E084B0F1BE8DE840030A4B0 /* TYAlertView.m in Sources */,
+				4E084B0B1BE8DE840030A4B0 /* TYAlertController.m in Sources */,
 				4EE0C1981BE79FCA00CFDD33 /* UITableView+NightVersion.m in Sources */,
+				4E084B0D1BE8DE840030A4B0 /* TYAlertFadeAnimation.m in Sources */,
 				4EF7DF561BDFAFB900BA2744 /* MANYReadingCell.m in Sources */,
+				4E084B0E1BE8DE840030A4B0 /* TYAlertScaleFadeAnimation.m in Sources */,
 				4E1142E91BDE6254001987DA /* MANYHomeModel.m in Sources */,
 				4E0088391BE390600084051B /* MANYThingCell.m in Sources */,
 				3886C0BB1BD74AE90014E661 /* BaseViewModel.m in Sources */,
@@ -732,8 +832,10 @@
 				4EE0C1911BE79FCA00CFDD33 /* UIButton+TitleColor.m in Sources */,
 				4E1FE2831BDDCD46009550FB /* MANYTabBarController.m in Sources */,
 				4E3AF2581BDF13FF00FFA1B0 /* MANYHomeViewModel.m in Sources */,
+				A9253B5E1BE8F63C00BE5556 /* MANYShareView.m in Sources */,
 				3886C0C11BD74B090014E661 /* BaseModel.m in Sources */,
 				4E1142F21BDE6619001987DA /* MANYThingModel.m in Sources */,
+				4E084B191BE8DE930030A4B0 /* TYAlertController+BlurEffects.m in Sources */,
 				4E3AF25B1BDF147200FFA1B0 /* MANYHomeCell.m in Sources */,
 				3886C0981BD748830014E661 /* main.m in Sources */,
 				3804CE521BD758F10046C8C8 /* NSObject+Common.m in Sources */,

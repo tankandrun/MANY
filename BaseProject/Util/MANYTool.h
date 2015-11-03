@@ -27,8 +27,8 @@
  */
 +(UIView *)addTopLogo;
 /**
- *  添加右上角Button
+ *  添加右上角Button并添加弹出分享菜单功能
  */
-+(UIBarButtonItem *)addButton;
++(UIBarButtonItem *)addButtonAndTarget:(id)target;
 
 @end

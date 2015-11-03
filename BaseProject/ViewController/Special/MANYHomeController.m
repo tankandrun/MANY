@@ -10,6 +10,7 @@
 #import "MANYHomeViewModel.h"
 #import "MANYHomeCell.h"
 #import "MANYTool.h"
+
 @interface MANYHomeController ()
 @property (nonatomic,strong)MANYHomeViewModel *homeVM;
 @property (nonatomic,strong)MANYHomeCell *cell;
@@ -26,14 +27,14 @@
     [super viewDidAppear:animated];
     //配置Navigation
     self.navigationItem.titleView = [MANYTool addTopLogo];
-    self.navigationItem.rightBarButtonItem = [MANYTool addButton];
+    self.navigationItem.rightBarButtonItem = [MANYTool addButtonAndTarget:self];
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.tableView.showsVerticalScrollIndicator = NO;
     self.navigationController.navigationBar.nightBarTintColor = kRGBColor(0, 0, 0);
     self.view.nightBackgroundColor = kRGBColor(40, 40, 40);
-//    self.homeVM.row = 1;
+
     //配置初始界面
     [MANYTool getInterFaceWithTableView:self.tableView usingViewModel:self.homeVM atSuperView:self.view];
 }

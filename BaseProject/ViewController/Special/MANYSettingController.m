@@ -18,7 +18,6 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.nightBarTintColor = kRGBColor(0, 0, 0);
 //    self.view.nightBackgroundColor = kRGBColor(40, 40, 40);
-    
 
     UITableView *tableView = [[UITableView alloc]init];
     tableView.frame = self.view.frame;
@@ -68,8 +67,10 @@
             } else {
                 [DKNightVersionManager nightFalling];
             }
-            [self.tableView reloadData];
+//            sw.selected = !sw.isSelected;
+//            [self.tableView reloadData];
         } forControlEvents:(UIControlEventValueChanged)];
+        
     }else if (indexPath.section == 1) {
         cell.textLabel.text = @"清除缓存";
         cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
@@ -107,5 +108,8 @@
     }else {
         return @" ";
     }
+}
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    
 }
 @end
