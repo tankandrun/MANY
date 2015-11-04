@@ -17,7 +17,6 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationController.navigationBar.nightBarTintColor = kRGBColor(0, 0, 0);
-//    self.view.nightBackgroundColor = kRGBColor(40, 40, 40);
 
     UITableView *tableView = [[UITableView alloc]init];
     tableView.frame = self.view.frame;
@@ -58,7 +57,18 @@
         cell.textLabel.font = [UIFont systemFontOfSize:15];
     }
     if (indexPath.section == 0) {
-        cell.textLabel.text = @"夜间模式切换";
+        UIButton *title = [[UIButton alloc]init];
+        title.contentHorizontalAlignment = UIControlContentHorizontalAlignmentLeft;
+        [title setTitle:@"夜间模式切换" forState:UIControlStateNormal];
+        [title setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
+        [title setTitleEdgeInsets:UIEdgeInsetsMake(0, 15, 0, 0)];
+        [title setNightBackgroundColor:kRGBColor(40, 40, 40)];
+        [title setNightTColorN:kRGBColor(150, 150, 150)];
+        title.titleLabel.font = [UIFont systemFontOfSize:15];
+        [cell addSubview:title];
+        [title mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(cell);
+        }];
         UISwitch *sw = [[UISwitch alloc]init];
         cell.accessoryView = sw;
         [sw bk_addEventHandler:^(id sender) {
@@ -67,8 +77,6 @@
             } else {
                 [DKNightVersionManager nightFalling];
             }
-//            sw.selected = !sw.isSelected;
-//            [self.tableView reloadData];
         } forControlEvents:(UIControlEventValueChanged)];
         
     }else if (indexPath.section == 1) {
@@ -93,8 +101,8 @@
 #warning 没有帐号登录时不显示
         cell.textLabel.text = @"退出当前账号";
     }
-//    cell.textLabel.nightTextColor = kRGBColor(150, 150, 150);
-//    cell.nightBackgroundColor = kRGBColor(20, 20, 20);
+    cell.textLabel.nightTextColor = kRGBColor(150, 150, 150);
+    cell.nightBackgroundColor = kRGBColor(40, 40, 40);
     return cell;
 }
 #pragma mark - UITableViewDelegate
@@ -110,6 +118,6 @@
     }
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
-    
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
 }
 @end

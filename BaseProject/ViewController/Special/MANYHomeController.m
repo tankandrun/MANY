@@ -10,13 +10,27 @@
 #import "MANYHomeViewModel.h"
 #import "MANYHomeCell.h"
 #import "MANYTool.h"
+//#import "iCarousel.h"
 
 @interface MANYHomeController ()
 @property (nonatomic,strong)MANYHomeViewModel *homeVM;
 @property (nonatomic,strong)MANYHomeCell *cell;
+
+//@property (nonatomic,strong)iCarousel *ic;
 @end
 
 @implementation MANYHomeController
+//- (iCarousel *)ic {
+//    if (!_ic) {
+//        _ic = [iCarousel new];
+//        _ic.delegate = self;
+//        _ic.dataSource = self;
+//        _ic.type = iCarouselTypeLinear;
+//        _ic.pagingEnabled = YES;
+//        _ic.autoscroll = 0;
+//    }
+//    return _ic;
+//}
 - (MANYHomeViewModel *)homeVM {
     if (!_homeVM) {
         _homeVM = [MANYHomeViewModel new];
@@ -31,6 +45,14 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+//    [self.view addSubview:self.ic];
+//    [self.ic mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.edges.mas_equalTo(0);
+//    }];
+//    [self.ic addSubview:self.tableView];
+    
+    
     self.tableView.showsVerticalScrollIndicator = NO;
     self.navigationController.navigationBar.nightBarTintColor = kRGBColor(0, 0, 0);
     self.view.nightBackgroundColor = kRGBColor(40, 40, 40);
@@ -78,6 +100,20 @@
     return kWindowH-64-49;
 }
 
+//#pragma mark - iCarousel
+//- (NSInteger)numberOfItemsInCarousel:(iCarousel *)carousel {
+//    return 5;
+//}
+//- (UIView *)carousel:(iCarousel *)carousel viewForItemAtIndex:(NSInteger)index reusingView:(UIView *)view {
+//    if (!view) {
+//        view = [[UIView alloc]initWithFrame:CGRectMake(0, 0, kWindowW, kWindowH)];
+//        [view addSubview:self.tableView];
+//        [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.edges.mas_equalTo(0);
+//        }];
+//    }
+//    return view;
+//}
 
 
 

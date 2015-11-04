@@ -55,6 +55,7 @@
 +(UIBarButtonItem *)addButtonAndTarget:(id)target{
     UIButton *shareButton = [[UIButton alloc]initWithFrame:CGRectMake(0, 0, 22, 22)];
     [shareButton setImage:[UIImage imageNamed:@"shareBtn"] forState:(UIControlStateNormal)];
+    shareButton.nightImageN = [UIImage imageNamed:@"shareBtn"];
     UIBarButtonItem *shareItem = [[UIBarButtonItem alloc]initWithCustomView:shareButton];
     [shareButton bk_addEventHandler:^(id sender) {
         MANYShareView *shareView = [MANYShareView createViewFromNib];

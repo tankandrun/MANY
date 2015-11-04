@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "AppDelegate+Category.h"
-
+//#import "UMSocial.h"
 @interface AppDelegate ()
 
 @end
@@ -19,6 +19,7 @@
     // Override point for customization after application launch.
     [self initializeWithApplication:application];
     
+//    [UMSocialData setAppKey:@"563724cbe0f55a25b0000aa9"];
     
 
     return YES;

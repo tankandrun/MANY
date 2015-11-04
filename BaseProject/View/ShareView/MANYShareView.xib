@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="MANYShareView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="260"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VUB-X9-zcN">
+                    <rect key="frame" x="10" y="219" width="355" height="1"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.90196078431372551" green="0.90196078431372551" blue="0.90196078431372551" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="5c1-Wp-6Vx"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="nightBackgroundColor">
+                            <color key="value" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bZ8-SB-N8H">
+                    <rect key="frame" x="10" y="123" width="355" height="1"/>
+                    <animations/>
+                    <color key="backgroundColor" red="0.90196078430000004" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="FVb-pq-gJN"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="nightBackgroundColor">
+                            <color key="value" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKv-nZ-tyQ">
+                    <rect key="frame" x="0.0" y="220" width="375" height="40"/>
+                    <animations/>
+                    <state key="normal" title="取消">
+                        <color key="titleColor" red="0.25098039215686274" green="0.76470588235294112" blue="0.94117647058823528" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="dismiss:" destination="iN0-l3-epB" eventType="touchUpInside" id="IEp-Mi-fFx"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="78B-Bj-A8V" userLabel="夜间模式">
+                    <rect key="frame" x="256" y="134" width="46" height="46"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="Lvx-0f-UVT"/>
+                        <constraint firstAttribute="width" constant="46" id="l0T-XR-0TL"/>
+                    </constraints>
+                    <state key="normal" image="share_night"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="nightImageN" value="share_day"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="nightMod:" destination="iN0-l3-epB" eventType="touchUpInside" id="9Ma-GV-Yc1"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gPT-DA-AKd" userLabel="新浪微博">
+                    <rect key="frame" x="8" y="45" width="46" height="46"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="8hO-ZE-iEl"/>
+                        <constraint firstAttribute="height" constant="46" id="bOO-ax-6Gg"/>
+                    </constraints>
+                    <state key="normal" image="share_sina"/>
+                    <state key="highlighted" image="share_sinaH"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="nightImageN" value="share_sina"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dqt-1D-h94" userLabel="微信好友">
+                    <rect key="frame" x="69" y="45" width="46" height="46"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="1bT-6r-oye"/>
+                        <constraint firstAttribute="height" constant="46" id="o2g-Si-xmr"/>
+                    </constraints>
+                    <state key="normal" image="share_wc"/>
+                    <state key="highlighted" image="share_wcH"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="nightImageN" value="share_wc"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXv-Yk-P9i" userLabel="微信朋友圈">
+                    <rect key="frame" x="130" y="45" width="46" height="46"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="A4p-bN-uCU"/>
+                        <constraint firstAttribute="height" constant="46" id="rCm-vn-RU6"/>
+                    </constraints>
+                    <state key="normal" image="share_timeline"/>
+                    <state key="highlighted" image="share_timelineH"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="nightImageN" value="share_timeline"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fp-IP-0X9" userLabel="QQ好友">
+                    <rect key="frame" x="191" y="45" width="46" height="46"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="jdF-Qy-bda"/>
+                        <constraint firstAttribute="width" constant="46" id="s8P-80-On1"/>
+                    </constraints>
+                    <state key="normal" image="share_qq"/>
+                    <state key="highlighted" image="share_qq_highlighted"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="nightImageN" value="share_qq"/>
+                    </userDefinedRuntimeAttributes>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="分享到" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4U-NI-IEa">
+                    <rect key="frame" x="0.0" y="15" width="375" height="20"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="20" id="30K-ri-2EV"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.63529411764705879" green="0.63529411764705879" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="nightTextColor">
+                            <color key="value" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新浪微博" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfR-Fl-0cz">
+                    <rect key="frame" x="11" y="94" width="40" height="15"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="RHy-4N-ABD"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.63529411764705879" green="0.63529411764705879" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="nightTextColor">
+                            <color key="value" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信好友" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wvx-2j-XLA">
+                    <rect key="frame" x="72" y="94" width="40" height="15"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="leA-Nk-sbj"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.63529411764705879" green="0.63529411764705879" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="nightTextColor">
+                            <color key="value" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="微信朋友圈" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3O5-g6-fsO">
+                    <rect key="frame" x="128" y="94" width="50" height="15"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="tBj-Mq-TLw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.63529411764705879" green="0.63529411764705879" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="nightTextColor">
+                            <color key="value" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="加入收藏" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Zu-64-KV0">
+                    <rect key="frame" x="76" y="183" width="40" height="15"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="JsX-Si-mCO"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.63529411764705879" green="0.63529411764705879" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="nightTextColor">
+                            <color key="value" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="保存图片" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hca-gb-NQy">
+                    <rect key="frame" x="137" y="183" width="40" height="15"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="vWm-pL-NDS"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.63529411764705879" green="0.63529411764705879" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="nightTextColor">
+                            <color key="value" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QQ好友" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kCc-Rh-vPu">
+                    <rect key="frame" x="196" y="94" width="36" height="15"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="9nB-GH-gEw"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.63529411764705879" green="0.63529411764705879" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="nightTextColor">
+                            <color key="value" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XHF-im-hB5" userLabel="收藏">
+                    <rect key="frame" x="73" y="134" width="46" height="46"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="Tkp-Zc-TEb"/>
+                        <constraint firstAttribute="width" constant="46" id="bFX-vb-KLu"/>
+                    </constraints>
+                    <state key="normal" image="share_col"/>
+                    <state key="selected" image="share_coled"/>
+                    <state key="highlighted" image="share_coled"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="nightImageN" value="share_col"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="addCollection:" destination="iN0-l3-epB" eventType="touchUpInside" id="y89-xB-3FQ"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="夜间模式" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xu0-e9-XYD">
+                    <rect key="frame" x="259" y="183" width="40" height="15"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="NC7-uX-e6T"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.63529411764705879" green="0.63529411764705879" blue="0.63529411764705879" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="nightTextColor">
+                            <color key="value" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F38-We-DIU" userLabel="保存图片">
+                    <rect key="frame" x="134" y="134" width="46" height="46"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="46" id="hJA-Iy-jhn"/>
+                        <constraint firstAttribute="width" constant="46" id="oQd-Nx-EDO"/>
+                    </constraints>
+                    <state key="normal" image="share_save"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="nightImageN" value="share_save"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="saveImg:" destination="iN0-l3-epB" eventType="touchUpInside" id="Z05-dr-IEr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9K-s7-4Uj">
+                    <rect key="frame" x="195" y="134" width="46" height="46"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="46" id="5vl-Fr-4Hg"/>
+                        <constraint firstAttribute="height" constant="46" id="ztm-9e-M2S"/>
+                    </constraints>
+                    <state key="normal" image="share_font"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="image" keyPath="nightImageN" value="share_font"/>
+                    </userDefinedRuntimeAttributes>
+                    <connections>
+                        <action selector="fontChange:" destination="iN0-l3-epB" eventType="touchUpInside" id="af4-bi-1Dc"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="显示字体" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vUl-Ya-LvP">
+                    <rect key="frame" x="198.5" y="183" width="40" height="15"/>
+                    <animations/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="15" id="FUk-I6-DFX"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                    <color key="textColor" red="0.63529411759999999" green="0.63529411759999999" blue="0.63529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="nightTextColor">
+                            <color key="value" red="0.58823529411764708" green="0.58823529411764708" blue="0.58823529411764708" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </label>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="XHF-im-hB5" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="73" id="1MI-OG-EhG"/>
+                <constraint firstItem="gPT-DA-AKd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="2yF-Jx-EiU"/>
+                <constraint firstItem="J4U-NI-IEa" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="35p-rc-Tr8"/>
+                <constraint firstItem="F38-We-DIU" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="3K9-AF-Nq7"/>
+                <constraint firstItem="F38-We-DIU" firstAttribute="leading" secondItem="XHF-im-hB5" secondAttribute="trailing" constant="15" id="4MK-E6-tfF"/>
+                <constraint firstItem="iKv-nZ-tyQ" firstAttribute="top" secondItem="VUB-X9-zcN" secondAttribute="bottom" id="7NW-xR-FbW"/>
+                <constraint firstItem="F38-We-DIU" firstAttribute="leading" secondItem="XHF-im-hB5" secondAttribute="trailing" constant="15" id="7RL-t0-dZs"/>
+                <constraint firstItem="XHF-im-hB5" firstAttribute="top" secondItem="bZ8-SB-N8H" secondAttribute="bottom" constant="10" id="9XG-UW-Z9Q"/>
+                <constraint firstAttribute="trailing" secondItem="bZ8-SB-N8H" secondAttribute="trailing" constant="10" id="CS6-kO-GoC"/>
+                <constraint firstItem="Wvx-2j-XLA" firstAttribute="top" secondItem="Dqt-1D-h94" secondAttribute="bottom" constant="3" id="DZO-nR-GWL"/>
+                <constraint firstItem="JfR-Fl-0cz" firstAttribute="centerX" secondItem="gPT-DA-AKd" secondAttribute="centerX" id="ELh-5Y-Vn7"/>
+                <constraint firstItem="hca-gb-NQy" firstAttribute="centerX" secondItem="F38-We-DIU" secondAttribute="centerX" id="EmZ-AY-xse"/>
+                <constraint firstAttribute="bottom" secondItem="iKv-nZ-tyQ" secondAttribute="bottom" id="JPk-tv-fvY"/>
+                <constraint firstItem="JfR-Fl-0cz" firstAttribute="top" secondItem="gPT-DA-AKd" secondAttribute="bottom" constant="3" id="Kau-Q5-SXs"/>
+                <constraint firstItem="hca-gb-NQy" firstAttribute="centerX" secondItem="F38-We-DIU" secondAttribute="centerX" id="LGU-Bx-0v1"/>
+                <constraint firstItem="78B-Bj-A8V" firstAttribute="leading" secondItem="F38-We-DIU" secondAttribute="trailing" constant="15" id="MPQ-6l-hYZ"/>
+                <constraint firstItem="gPT-DA-AKd" firstAttribute="top" secondItem="J4U-NI-IEa" secondAttribute="bottom" constant="10" id="NPY-Q2-028"/>
+                <constraint firstItem="Wvx-2j-XLA" firstAttribute="centerX" secondItem="Dqt-1D-h94" secondAttribute="centerX" id="NUb-5N-RO3"/>
+                <constraint firstItem="6fp-IP-0X9" firstAttribute="top" secondItem="J4U-NI-IEa" secondAttribute="bottom" constant="10" id="ONr-dQ-PXs"/>
+                <constraint firstItem="iKv-nZ-tyQ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="P4l-4X-Ogv"/>
+                <constraint firstItem="xu0-e9-XYD" firstAttribute="centerX" secondItem="78B-Bj-A8V" secondAttribute="centerX" id="SXW-QR-1Kk"/>
+                <constraint firstAttribute="trailing" secondItem="iKv-nZ-tyQ" secondAttribute="trailing" id="SxE-id-5oU"/>
+                <constraint firstItem="lXv-Yk-P9i" firstAttribute="leading" secondItem="Dqt-1D-h94" secondAttribute="trailing" constant="15" id="U6r-SF-bCx"/>
+                <constraint firstItem="xu0-e9-XYD" firstAttribute="top" secondItem="78B-Bj-A8V" secondAttribute="bottom" constant="3" id="VnV-l3-HEZ"/>
+                <constraint firstAttribute="trailing" secondItem="VUB-X9-zcN" secondAttribute="trailing" constant="10" id="WKb-0f-EFU"/>
+                <constraint firstItem="g9K-s7-4Uj" firstAttribute="top" secondItem="bZ8-SB-N8H" secondAttribute="bottom" constant="10" id="c4M-cG-WXH"/>
+                <constraint firstItem="3O5-g6-fsO" firstAttribute="top" secondItem="lXv-Yk-P9i" secondAttribute="bottom" constant="3" id="cG2-Y2-t6f"/>
+                <constraint firstAttribute="bottom" secondItem="VUB-X9-zcN" secondAttribute="bottom" constant="40" id="d8k-sR-fsY"/>
+                <constraint firstItem="J4U-NI-IEa" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="15" id="dLk-x4-qhu"/>
+                <constraint firstItem="Dqt-1D-h94" firstAttribute="leading" secondItem="gPT-DA-AKd" secondAttribute="trailing" constant="15" id="enY-2W-Jb4"/>
+                <constraint firstItem="78B-Bj-A8V" firstAttribute="leading" secondItem="g9K-s7-4Uj" secondAttribute="trailing" constant="15" id="etQ-IA-T2m"/>
+                <constraint firstItem="kCc-Rh-vPu" firstAttribute="centerX" secondItem="6fp-IP-0X9" secondAttribute="centerX" id="gQN-Tc-Oji"/>
+                <constraint firstItem="g9K-s7-4Uj" firstAttribute="leading" secondItem="F38-We-DIU" secondAttribute="trailing" constant="15" id="hN2-WQ-DJn"/>
+                <constraint firstItem="VUB-X9-zcN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="ids-wv-Uay"/>
+                <constraint firstItem="F38-We-DIU" firstAttribute="top" secondItem="bZ8-SB-N8H" secondAttribute="bottom" constant="10" id="koo-EO-r99"/>
+                <constraint firstItem="6fp-IP-0X9" firstAttribute="leading" secondItem="lXv-Yk-P9i" secondAttribute="trailing" constant="15" id="lU5-Fx-GGn"/>
+                <constraint firstItem="vUl-Ya-LvP" firstAttribute="centerX" secondItem="g9K-s7-4Uj" secondAttribute="centerX" id="moU-Og-sEZ"/>
+                <constraint firstItem="Dqt-1D-h94" firstAttribute="top" secondItem="J4U-NI-IEa" secondAttribute="bottom" constant="10" id="nhC-4l-fC1"/>
+                <constraint firstAttribute="trailing" secondItem="J4U-NI-IEa" secondAttribute="trailing" id="oIZ-Sj-E6E"/>
+                <constraint firstItem="8Zu-64-KV0" firstAttribute="centerX" secondItem="XHF-im-hB5" secondAttribute="centerX" id="oVh-5e-Njc"/>
+                <constraint firstItem="8Zu-64-KV0" firstAttribute="top" secondItem="XHF-im-hB5" secondAttribute="bottom" constant="3" id="oWh-Aq-cPR"/>
+                <constraint firstItem="78B-Bj-A8V" firstAttribute="top" secondItem="bZ8-SB-N8H" secondAttribute="bottom" constant="10" id="oqB-6K-jy5"/>
+                <constraint firstItem="lXv-Yk-P9i" firstAttribute="centerX" secondItem="3O5-g6-fsO" secondAttribute="centerX" id="p2a-H6-RLP"/>
+                <constraint firstItem="vUl-Ya-LvP" firstAttribute="top" secondItem="g9K-s7-4Uj" secondAttribute="bottom" constant="3" id="pkf-BJ-rhU"/>
+                <constraint firstItem="lXv-Yk-P9i" firstAttribute="top" secondItem="J4U-NI-IEa" secondAttribute="bottom" constant="10" id="qGH-5e-l8l"/>
+                <constraint firstItem="bZ8-SB-N8H" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="rHC-OK-T7F"/>
+                <constraint firstItem="kCc-Rh-vPu" firstAttribute="top" secondItem="6fp-IP-0X9" secondAttribute="bottom" constant="3" id="v5N-Rp-f2w"/>
+                <constraint firstItem="VUB-X9-zcN" firstAttribute="top" secondItem="bZ8-SB-N8H" secondAttribute="bottom" constant="95" id="v7N-XB-I2c"/>
+                <constraint firstItem="hca-gb-NQy" firstAttribute="top" secondItem="XHF-im-hB5" secondAttribute="bottom" constant="3" id="x8h-jg-H5x"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="color" keyPath="nightBackgroundColor">
+                    <color key="value" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <variation key="default">
+                <mask key="constraints">
+                    <exclude reference="3K9-AF-Nq7"/>
+                    <exclude reference="4MK-E6-tfF"/>
+                    <exclude reference="LGU-Bx-0v1"/>
+                    <exclude reference="MPQ-6l-hYZ"/>
+                </mask>
+            </variation>
+            <connections>
+                <outlet property="colBtn" destination="XHF-im-hB5" id="dcr-Jq-iaD"/>
+                <outlet property="nightLB" destination="xu0-e9-XYD" id="kt6-Ia-CUW"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="share_col" width="46" height="46"/>
+        <image name="share_coled" width="46" height="46"/>
+        <image name="share_day" width="46" height="46"/>
+        <image name="share_font" width="46" height="46"/>
+        <image name="share_night" width="46" height="46"/>
+        <image name="share_qq" width="46" height="46"/>
+        <image name="share_qq_highlighted" width="46" height="46"/>
+        <image name="share_save" width="46" height="46"/>
+        <image name="share_sina" width="46" height="46"/>
+        <image name="share_sinaH" width="46" height="46"/>
+        <image name="share_timeline" width="46" height="46"/>
+        <image name="share_timelineH" width="46" height="46"/>
+        <image name="share_wc" width="46" height="46"/>
+        <image name="share_wcH" width="46" height="46"/>
+    </resources>
+</document>

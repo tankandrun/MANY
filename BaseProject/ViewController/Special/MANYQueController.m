@@ -26,6 +26,8 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     self.navigationItem.titleView = [MANYTool addTopLogo];
+    self.navigationItem.rightBarButtonItem = [MANYTool addButtonAndTarget:self];
+
 //    self.navigationItem.rightBarButtonItem = [MANYTool addButton];
 }
 - (void)viewDidLoad {
